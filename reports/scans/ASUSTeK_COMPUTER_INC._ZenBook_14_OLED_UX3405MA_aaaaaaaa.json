@@ -1,0 +1,493 @@
+{
+  "schema_version": "1.0.0",
+  "scan_id": "1d437f95-6cdc-4cb6-9253-705c03320f66",
+  "machine_fingerprint": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "platform": "Windows",
+  "os_version": "Windows 11 Pro 24H2",
+  "timestamp_utc": "2026-11-15T19:20:00Z",
+  "compatibility_matrix": {},
+  "hardware": {
+    "cpu": {
+      "model": "Intel Core Ultra 9 185H",
+      "architecture": "x86_64",
+      "physical_cores": 16,
+      "logical_threads": 22,
+      "base_clock_mhz": null,
+      "max_clock_mhz": null,
+      "temp_c": null
+    },
+    "memory": {
+      "total_bytes": 34359738368,
+      "slots_used": 8,
+      "slots_total": 8,
+      "modules": []
+    },
+    "storage": [],
+    "gpu": [],
+    "motherboard": {
+      "manufacturer": "ASUSTeK COMPUTER INC.",
+      "product": "ZenBook 14 OLED UX3405MA",
+      "bios_version": "UX3405MA.311",
+      "bios_date": null,
+      "secure_boot_enabled": null
+    },
+    "battery": {
+      "present": true,
+      "design_capacity_mwh": null,
+      "full_charge_capacity_mwh": null,
+      "health_pct": null,
+      "cycle_count": null,
+      "status": "Normal 88%"
+    },
+    "network": [],
+    "voltages": {},
+    "fan_rpm": {},
+    "gpio_pins": null,
+    "virtualization": null,
+    "connected_mobile_devices": [],
+    "industrial_controllers": [],
+    "connected_peripherals": [
+      {
+        "category": "Display / Monitor",
+        "name": "Generic PnP Monitor",
+        "hardware_id": null,
+        "connection_type": "DisplayPort / HDMI / eDP",
+        "manufacturer": null,
+        "serial_number": null,
+        "status": "Active / Connected",
+        "details": {
+          "resolution": "Auto / Native EDID"
+        }
+      },
+      {
+        "category": "Audio / Speaker / Mic",
+        "name": "Cirrus Logic Awesome Speaker Amps",
+        "hardware_id": "ACPI\\CSC3551\\1",
+        "connection_type": "Wired / USB",
+        "manufacturer": "Cirrus Logic, Inc.",
+        "serial_number": null,
+        "status": "Active / Connected",
+        "details": {}
+      },
+      {
+        "category": "Audio / Speaker / Mic",
+        "name": "Headphones (CMF Buds 2 Plus)",
+        "hardware_id": "SWD\\MMDEVAPI\\{0.0.0.00000000}.{88AB6B08-81F8-4ECD-B063-35494021BACC}",
+        "connection_type": "Wired / USB",
+        "manufacturer": "Microsoft",
+        "serial_number": null,
+        "status": "Active / Connected",
+        "details": {}
+      },
+      {
+        "category": "USB Hub / Controller",
+        "name": "USB Mass Storage Device",
+        "hardware_id": "USB\\VID_0781&PID_5591\\040102841D10B8100ABF668C0297B48A2D756CD6373D1390BDA04A69E3FE3F6E485B00000000000000000000E25A4614000181189155810782AF4086",
+        "connection_type": "Wired / USB",
+        "manufacturer": "Compatible USB storage device",
+        "serial_number": null,
+        "status": "Active / Connected",
+        "details": {}
+      },
+      {
+        "category": "USB Hub / Controller",
+        "name": "USB4(TM) Host Router (Microsoft)",
+        "hardware_id": "PCI\\VEN_8086&DEV_7EC2&SUBSYS_1A631043&REV_10&USB4_MS_CM\\3&11583659&0&6A",
+        "connection_type": "Wired / USB",
+        "manufacturer": "Generic USB4 Host Router",
+        "serial_number": null,
+        "status": "Active / Connected",
+        "details": {}
+      },
+      {
+        "category": "USB Hub / Controller",
+        "name": "Intel(R) USB 3.20 eXtensible Host Controller - 1.20 (Microsoft)",
+        "hardware_id": "PCI\\VEN_8086&DEV_7E7D&SUBSYS_201F1043&REV_20\\3&11583659&0&A0",
+        "connection_type": "Wired / USB",
+        "manufacturer": "Generic USB xHCI Host Controller",
+        "serial_number": null,
+        "status": "Active / Connected",
+        "details": {}
+      },
+      {
+        "category": "Keyboard / Input",
+        "name": "PC/AT Enhanced PS/2 Keyboard (101/102-Key)",
+        "hardware_id": "ACPI\\ATK3001\\4&2AE525AE&0",
+        "connection_type": "Wired / USB",
+        "manufacturer": "(Standard keyboards)",
+        "serial_number": null,
+        "status": "Active / Connected",
+        "details": {}
+      },
+      {
+        "category": "Audio / Speaker / Mic",
+        "name": "Intel\u00ae Smart Sound Technology for USB Audio",
+        "hardware_id": "INTELAUDIO\\CTLR_DEV_7E28&LINKTYPE_06&DEVTYPE_06&VEN_8086&DEV_AE50&SUBSYS_1A631043&REV_0001\\0605",
+        "connection_type": "Wired / USB",
+        "manufacturer": "Intel(R) Corporation",
+        "serial_number": null,
+        "status": "Active / Connected",
+        "details": {}
+      },
+      {
+        "category": "Audio / Speaker / Mic",
+        "name": "Intel\u00ae Smart Sound Technology for Bluetooth\u00ae LE Audio",
+        "hardware_id": "INTELAUDIO\\CTLR_DEV_7E28&LINKTYPE_03&DEVTYPE_03&VEN_8086&DEV_AE33&SUBSYS_1A631043&REV_0001\\5&9899AF0&0&0301",
+        "connection_type": "Wired / USB",
+        "manufacturer": "Intel\u00ae Corporation",
+        "serial_number": null,
+        "status": "Active / Connected",
+        "details": {}
+      },
+      {
+        "category": "Audio / Speaker / Mic",
+        "name": "Intel\u00ae Smart Sound Technology for Bluetooth\u00ae Audio",
+        "hardware_id": "INTELAUDIO\\CTLR_DEV_7E28&LINKTYPE_03&DEVTYPE_00&VEN_8086&DEV_AE30&SUBSYS_1A631043&REV_0001\\5&9899AF0&0&0000",
+        "connection_type": "Wired / USB",
+        "manufacturer": "Intel(R) Corporation",
+        "serial_number": null,
+        "status": "Active / Connected",
+        "details": {}
+      },
+      {
+        "category": "USB Hub / Controller",
+        "name": "Intel(R) USB 3.20 eXtensible Host Controller - 1.20 (Microsoft)",
+        "hardware_id": "PCI\\VEN_8086&DEV_7EC0&SUBSYS_1A631043&REV_10\\3&11583659&0&68",
+        "connection_type": "Wired / USB",
+        "manufacturer": "Generic USB xHCI Host Controller",
+        "serial_number": null,
+        "status": "Active / Connected",
+        "details": {}
+      },
+      {
+        "category": "Camera / Video",
+        "name": "USB2.0 FHD UVC WebCam",
+        "hardware_id": "USB\\VID_3277&PID_0055&MI_00\\6&21FE1B1B&0&0000",
+        "connection_type": "Wired / USB",
+        "manufacturer": "Microsoft",
+        "serial_number": null,
+        "status": "Active / Connected",
+        "details": {}
+      },
+      {
+        "category": "Audio / Speaker / Mic",
+        "name": "Headset (CMF Buds 2 Plus)",
+        "hardware_id": "SWD\\MMDEVAPI\\{0.0.1.00000000}.{B46B6329-19FF-4BB1-B9EB-9D2757344207}",
+        "connection_type": "Wired / USB",
+        "manufacturer": "Microsoft",
+        "serial_number": null,
+        "status": "Active / Connected",
+        "details": {}
+      },
+      {
+        "category": "Keyboard / Input",
+        "name": "HID Keyboard Device",
+        "hardware_id": "HID\\CONVERTEDDEVICE&COL01\\5&3034381C&0&0000",
+        "connection_type": "Wired / USB",
+        "manufacturer": "(Standard keyboards)",
+        "serial_number": null,
+        "status": "Active / Connected",
+        "details": {}
+      },
+      {
+        "category": "USB Hub / Controller",
+        "name": "USB Root Hub (USB 3.0)",
+        "hardware_id": "USB\\ROOT_HUB30\\4&1C93DB3F&0&0",
+        "connection_type": "Wired / USB",
+        "manufacturer": "(Standard USB HUBs)",
+        "serial_number": null,
+        "status": "Active / Connected",
+        "details": {}
+      },
+      {
+        "category": "Audio / Speaker / Mic",
+        "name": "FxSound Speakers (FxSound Audio Enhancer)",
+        "hardware_id": "SWD\\MMDEVAPI\\{0.0.0.00000000}.{84B2F987-5937-402A-88E3-2D9E8E1D4070}",
+        "connection_type": "Wired / USB",
+        "manufacturer": "Microsoft",
+        "serial_number": null,
+        "status": "Active / Connected",
+        "details": {}
+      },
+      {
+        "category": "USB Hub / Controller",
+        "name": "USB Root Hub (USB 3.0)",
+        "hardware_id": "USB\\ROOT_HUB30\\4&37C5BD69&0&0",
+        "connection_type": "Wired / USB",
+        "manufacturer": "(Standard USB HUBs)",
+        "serial_number": null,
+        "status": "Active / Connected",
+        "details": {}
+      },
+      {
+        "category": "Keyboard / Input",
+        "name": "HID Keyboard Device",
+        "hardware_id": "HID\\INTC816&COL01\\3&307E7B97&0&0000",
+        "connection_type": "Wired / USB",
+        "manufacturer": "(Standard keyboards)",
+        "serial_number": null,
+        "status": "Active / Connected",
+        "details": {}
+      },
+      {
+        "category": "USB Hub / Controller",
+        "name": "USB Composite Device",
+        "hardware_id": "USB\\VID_3277&PID_0055\\200901010001",
+        "connection_type": "Wired / USB",
+        "manufacturer": "(Standard USB Host Controller)",
+        "serial_number": null,
+        "status": "Active / Connected",
+        "details": {}
+      },
+      {
+        "category": "Audio / Speaker / Mic",
+        "name": "Microphone Array (Intel\u00ae Smart Sound Technology for Digital Microphones)",
+        "hardware_id": "SWD\\MMDEVAPI\\{0.0.1.00000000}.{ACEEA5C2-B8C8-498B-A3E2-F7DD5C584B27}",
+        "connection_type": "Wired / USB",
+        "manufacturer": "Microsoft",
+        "serial_number": null,
+        "status": "Active / Connected",
+        "details": {}
+      },
+      {
+        "category": "Audio / Speaker / Mic",
+        "name": "Speakers (Realtek(R) Audio)",
+        "hardware_id": "SWD\\MMDEVAPI\\{0.0.0.00000000}.{1F8EB945-C462-4B2A-AC8F-A5954B5523EF}",
+        "connection_type": "Wired / USB",
+        "manufacturer": "Microsoft",
+        "serial_number": null,
+        "status": "Active / Connected",
+        "details": {}
+      },
+      {
+        "category": "Keyboard / Input",
+        "name": "ASUS Keyboard",
+        "hardware_id": "HID\\ASUP1415&COL04\\5&49852EF&0&0003",
+        "connection_type": "Wired / USB",
+        "manufacturer": "ASUSTek COMPUTER INC.",
+        "serial_number": null,
+        "status": "Active / Connected",
+        "details": {}
+      },
+      {
+        "category": "Camera / Video",
+        "name": "USB2.0 IR UVC WebCam",
+        "hardware_id": "USB\\VID_3277&PID_0055&MI_02\\6&21FE1B1B&0&0002",
+        "connection_type": "Wired / USB",
+        "manufacturer": "Microsoft",
+        "serial_number": null,
+        "status": "Active / Connected",
+        "details": {}
+      },
+      {
+        "category": "Mouse / Pointing Device",
+        "name": "HID-compliant mouse",
+        "hardware_id": "HID\\ASUP1415&COL01\\5&49852EF&0&0000",
+        "connection_type": "Wired / USB",
+        "manufacturer": "Microsoft",
+        "serial_number": null,
+        "status": "Active / Connected",
+        "details": {}
+      },
+      {
+        "category": "Audio / Speaker / Mic",
+        "name": "Headset (CMF Buds 2 Plus Hands-Free)",
+        "hardware_id": "SWD\\MMDEVAPI\\{0.0.0.00000000}.{3903C84A-242F-4550-A8F7-0F1201BAF7AF}",
+        "connection_type": "Wired / USB",
+        "manufacturer": "Microsoft",
+        "serial_number": null,
+        "status": "Active / Connected",
+        "details": {}
+      },
+      {
+        "category": "Audio / Speaker / Mic",
+        "name": "Realtek(R) Audio",
+        "hardware_id": "INTELAUDIO\\FUNC_01&VEN_10EC&DEV_0294&SUBSYS_10431A63&REV_1000\\5&9899AF0&0&0001",
+        "connection_type": "Wired / USB",
+        "manufacturer": "Realtek",
+        "serial_number": null,
+        "status": "Active / Connected",
+        "details": {}
+      },
+      {
+        "category": "USB Hub / Controller",
+        "name": "USB4 Root Router (1.0)",
+        "hardware_id": "USB4\\ROOT_DEVICE_ROUTER&VID_8086&PID_7EC2\\4&3A7A1EE6&0&0",
+        "connection_type": "Wired / USB",
+        "manufacturer": "Generic USB4 Device Router",
+        "serial_number": null,
+        "status": "Active / Connected",
+        "details": {}
+      },
+      {
+        "category": "Audio / Speaker / Mic",
+        "name": "EPSON Projector ENP Audio Device",
+        "hardware_id": "ROOT\\MEDIA\\0000",
+        "connection_type": "Wired / USB",
+        "manufacturer": "SEIKO EPSON CORPORATION",
+        "serial_number": null,
+        "status": "Active / Connected",
+        "details": {}
+      },
+      {
+        "category": "Audio / Speaker / Mic",
+        "name": "FxSound Audio Enhancer",
+        "hardware_id": "ROOT\\MEDIA\\0001",
+        "connection_type": "Wired / USB",
+        "manufacturer": "FxSound",
+        "serial_number": null,
+        "status": "Active / Connected",
+        "details": {}
+      }
+    ],
+    "network_topology": {
+      "domain_or_workgroup": "WORKGROUP",
+      "dns_servers": [
+        "1.1.1.1",
+        "1.0.0.1"
+      ],
+      "default_gateway": "192.168.0.1",
+      "dhcp_server": "192.168.0.1",
+      "connected_servers": [
+        {
+          "server_address": "13.185.75.29:443",
+          "service_type": "HTTPS / Cloud Gateway Server",
+          "state": "ESTABLISHED",
+          "process_name": null,
+          "remote_hostname": null
+        },
+        {
+          "server_address": "72.145.35.103:443",
+          "service_type": "HTTPS / Cloud Gateway Server",
+          "state": "ESTABLISHED",
+          "process_name": null,
+          "remote_hostname": null
+        },
+        {
+          "server_address": "192.178.211.188:5228",
+          "service_type": "Remote TCP Service (Port 5228)",
+          "state": "ESTABLISHED",
+          "process_name": null,
+          "remote_hostname": null
+        },
+        {
+          "server_address": "40.126.18.33:443",
+          "service_type": "HTTPS / Cloud Gateway Server",
+          "state": "ESTABLISHED",
+          "process_name": null,
+          "remote_hostname": null
+        },
+        {
+          "server_address": "172.64.148.235:443",
+          "service_type": "HTTPS / Cloud Gateway Server",
+          "state": "ESTABLISHED",
+          "process_name": null,
+          "remote_hostname": null
+        },
+        {
+          "server_address": "192.178.211.188:5228",
+          "service_type": "Remote TCP Service (Port 5228)",
+          "state": "ESTABLISHED",
+          "process_name": null,
+          "remote_hostname": null
+        },
+        {
+          "server_address": "172.64.148.235:443",
+          "service_type": "HTTPS / Cloud Gateway Server",
+          "state": "ESTABLISHED",
+          "process_name": null,
+          "remote_hostname": null
+        },
+        {
+          "server_address": "172.64.148.235:443",
+          "service_type": "HTTPS / Cloud Gateway Server",
+          "state": "ESTABLISHED",
+          "process_name": null,
+          "remote_hostname": null
+        },
+        {
+          "server_address": "3.22.91.130:443",
+          "service_type": "HTTPS / Cloud Gateway Server",
+          "state": "ESTABLISHED",
+          "process_name": null,
+          "remote_hostname": null
+        },
+        {
+          "server_address": "13.185.75.29:443",
+          "service_type": "HTTPS / Cloud Gateway Server",
+          "state": "ESTABLISHED",
+          "process_name": null,
+          "remote_hostname": null
+        },
+        {
+          "server_address": "172.64.148.235:443",
+          "service_type": "HTTPS / Cloud Gateway Server",
+          "state": "ESTABLISHED",
+          "process_name": null,
+          "remote_hostname": null
+        },
+        {
+          "server_address": "23.208.178.54:443",
+          "service_type": "HTTPS / Cloud Gateway Server",
+          "state": "ESTABLISHED",
+          "process_name": null,
+          "remote_hostname": null
+        },
+        {
+          "server_address": "57.144.57.32:443",
+          "service_type": "HTTPS / Cloud Gateway Server",
+          "state": "ESTABLISHED",
+          "process_name": null,
+          "remote_hostname": null
+        },
+        {
+          "server_address": "172.217.114.4:443",
+          "service_type": "HTTPS / Cloud Gateway Server",
+          "state": "ESTABLISHED",
+          "process_name": null,
+          "remote_hostname": null
+        },
+        {
+          "server_address": "172.64.148.235:443",
+          "service_type": "HTTPS / Cloud Gateway Server",
+          "state": "ESTABLISHED",
+          "process_name": null,
+          "remote_hostname": null
+        }
+      ],
+      "subnet_neighbors": [
+        {
+          "ip_address": "192.168.0.1",
+          "mac_address": "74:33:A6:1C:6C:90",
+          "device_type": "Default Gateway Router",
+          "hostname": null
+        },
+        {
+          "ip_address": "172.26.72.15",
+          "mac_address": "00:15:5D:0C:84:8E",
+          "device_type": "Network Host / Node",
+          "hostname": null
+        }
+      ],
+      "active_connections_count": 27
+    }
+  },
+  "diagnostics": [
+    {
+      "test_name": "RAM Capacity",
+      "status": "PASS",
+      "metric_value": 32.0,
+      "threshold": 4.0,
+      "evidence": "Sufficient memory detected: 32.0 GB across 8 slot(s).",
+      "recommendation": "None"
+    },
+    {
+      "test_name": "Storage Inventory",
+      "status": "WARN",
+      "metric_value": null,
+      "threshold": null,
+      "evidence": "No physical storage drives detected.",
+      "recommendation": "Ensure storage controller drivers are loaded."
+    }
+  ]
+}

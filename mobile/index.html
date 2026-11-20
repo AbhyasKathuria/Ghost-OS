@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Ghost-OS Mobile Console | Black &bull; Red &bull; White Theme</title>
+<style>
+  :root {
+    --bg-dark: #000000;
+    --card-bg: #0A0A0C;
+    --card-border: #27272A;
+    --accent-red: #EF4444;
+    --accent-ruby: #DC2626;
+    --accent-crimson: #991B1B;
+    --text-primary: #FFFFFF;
+    --text-secondary: #A1A1AA;
+    --glow-red: rgba(239, 68, 68, 0.45);
+  }
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  body {
+    background: var(--bg-dark);
+    color: var(--text-primary);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 16px;
+    line-height: 1.5;
+  }
+  .container { max-width: 640px; margin: 0 auto; }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0 20px;
+    border-bottom: 1px solid var(--card-border);
+  }
+  .brand {
+    font-size: 22px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #EF4444, #FFFFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .status-pill {
+    background: rgba(220, 38, 38, 0.2);
+    color: var(--accent-red);
+    border: 1px solid var(--accent-ruby);
+    padding: 4px 10px;
+    border-radius: 9999px;
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+  .hero-card {
+    background: #0A0A0C;
+    border: 1px solid var(--card-border);
+    border-radius: 16px;
+    padding: 24px 20px;
+    margin: 20px 0;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.8), 0 0 15px rgba(220, 38, 38, 0.15);
+    position: relative;
+    overflow: hidden;
+  }
+  .hero-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; height: 3px;
+    background: linear-gradient(90deg, #DC2626, #EF4444, #DC2626);
+  }
+  .hero-title { font-size: 20px; font-weight: 900; margin: 0 0 6px; color: #FFFFFF; }
+  .hero-subtitle { font-size: 13px; color: var(--text-secondary); margin: 0 0 16px; }
+  .stats-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+  .stat-box {
+    background: #000000;
+    padding: 12px 8px;
+    border-radius: 10px;
+    border: 1px solid var(--card-border);
+    text-align: center;
+  }
+  .stat-val { font-size: 15px; font-weight: 900; color: #FFFFFF; }
+  .stat-lbl { font-size: 10px; color: var(--accent-red); text-transform: uppercase; font-weight: 800; margin-top: 2px; }
+
+  .section-title {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--accent-red);
+    font-weight: 900;
+    margin: 24px 0 12px;
+  }
+  .mode-card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 14px;
+    padding: 18px;
+    margin-bottom: 14px;
+  }
+  .mode-badge {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 6px;
+    font-size: 10px;
+    font-weight: 800;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    background: rgba(220, 38, 38, 0.2);
+    color: var(--accent-red);
+    border: 1px solid var(--accent-ruby);
+  }
+
+  .mode-title { font-size: 16px; font-weight: 800; margin: 0 0 6px; color: #FFFFFF; }
+  .mode-desc { font-size: 13px; color: var(--text-secondary); margin: 0 0 12px; }
+  .step-list { margin: 0 0 12px; padding-left: 20px; font-size: 12px; color: #D4D4D8; }
+  .step-list li { margin-bottom: 6px; }
+
+  .btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(135deg, #DC2626, #EF4444);
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 800;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(220, 38, 38, 0.4);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+  .btn:hover { background: linear-gradient(135deg, #B91C1C, #DC2626); }
+
+  .nav-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 14px; }
+  .nav-btn {
+    background: #000000;
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 14px;
+    text-decoration: none;
+    color: var(--text-primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: border 0.2s;
+  }
+  .nav-btn:hover { border-color: var(--accent-red); }
+  .nav-btn-title { font-size: 13px; font-weight: 800; color: #FFFFFF; }
+  .nav-btn-sub { font-size: 11px; color: var(--text-secondary); margin-top: 2px; }
+
+  .verifier-box {
+    background: #000000;
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 16px;
+    margin-top: 10px;
+  }
+  .hash-input {
+    width: 100%;
+    background: #0A0A0C;
+    border: 1px solid var(--card-border);
+    color: #FFFFFF;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-family: monospace;
+    margin-bottom: 10px;
+  }
+  .hash-input:focus {
+    border-color: var(--accent-red);
+    outline: none;
+  }
+  .verify-res { font-size: 12px; margin-top: 8px; font-weight: 600; }
+
+  .footer {
+    text-align: center;
+    font-size: 11px;
+    color: #52525B;
+    margin-top: 30px;
+    padding-top: 16px;
+    border-top: 1px solid var(--card-border);
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <div class="brand">GHOST-OS MOBILE</div>
+    <div class="status-pill">BLACK &bull; RED &bull; WHITE</div>
+  </div>
+
+  <div class="hero-card">
+    <div class="hero-title">Universal Mobile Intelligence</div>
+    <div class="hero-subtitle">Operates across Android & iOS devices via USB Type-C, USB OTG, and Local Wi-Fi bridges.</div>
+    <div class="stats-row">
+      <div class="stat-box">
+        <div class="stat-val">Type-C</div>
+        <div class="stat-lbl">Interface</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-val">Zero-App</div>
+        <div class="stat-lbl">Architecture</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-val">100%</div>
+        <div class="stat-lbl">Air-Gapped</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-title">Operational Modes via Type-C</div>
+
+  <!-- MODE 1 -->
+  <div class="mode-card">
+    <span class="mode-badge">Mode 1 &bull; Workstation to Phone Audit</span>
+    <div class="mode-title">Audit Android & iPhone from PC / Laptop</div>
+    <div class="mode-desc">Connect any smartphone to the Ghost-OS workstation via a Type-C cable to audit battery health, SoC silicon, and hardware serials.</div>
+    <ol class="step-list">
+      <li><strong>For Android:</strong> Enable <em>Developer Options &rarr; USB Debugging</em>, connect via USB-C cable.</li>
+      <li><strong>For iPhone / iPad:</strong> Connect via USB-C cable and tap <strong>"Trust This Computer"</strong> on the screen.</li>
+      <li>Run <code>Scan-Phone.cmd</code> (Windows) or <code>python -m ghost_core.scanners.phone_scanner</code>.</li>
+      <li>Generates tamper-evident Mobile Certificates with battery cycles and SoC specifications.</li>
+    </ol>
+  </div>
+
+  <!-- MODE 2 -->
+  <div class="mode-card">
+    <span class="mode-badge">Mode 2 &bull; Direct Phone OTG (Phone as Host)</span>
+    <div class="mode-title">Plug Pendrive Directly into Phone Type-C</div>
+    <div class="mode-desc">Plug the physical SanDisk Type-C drive directly into your Android phone or iPhone 15/16 USB-C port.</div>
+    <ol class="step-list">
+      <li><strong>On Android:</strong> Open <em>Files</em> or <em>Termux</em>. Run <code>sh Launch-GhostOS-Android.sh</code> to audit the phone directly and write JSON reports to the drive.</li>
+      <li><strong>On iOS (iPhone 15/16 / iPad):</strong> Open the <strong>Files app</strong> &rarr; Select <strong>GhostVault</strong> under Locations &rarr; Tap any certificate in <code>reports/certificates/</code> to view offline in Safari!</li>
+      <li>Open <code>START_HERE.html</code> directly in your mobile browser with zero installation.</li>
+    </ol>
+  </div>
+
+  <!-- MODE 3 -->
+  <div class="mode-card">
+    <span class="mode-badge">Mode 3 &bull; Wireless Local Mobile Dashboard</span>
+    <div class="mode-title">Monitor & Control Workstation from Phone</div>
+    <div class="mode-desc">Access the real-time Ghost-OS Admin Dashboard from your phone's Safari or Chrome over local Wi-Fi or phone hotspot.</div>
+    <ol class="step-list">
+      <li>On the host PC/laptop, launch <code>Launch-GhostOS-Remote.cmd</code>.</li>
+      <li>Connect phone to the same Wi-Fi or laptop mobile hotspot.</li>
+      <li>Open phone browser and navigate to <code>http://&lt;laptop-ip&gt;:8000</code>.</li>
+      <li>Full access to Fleet Inventory, real-time hardware gauges, and Ghost-AI Copilot.</li>
+    </ol>
+  </div>
+
+  <div class="section-title">Direct Reports & Certificates Explorer</div>
+  <div class="nav-grid">
+    <a href="../reports/certificates/" class="nav-btn">
+      <div class="nav-btn-title">View Certificates</div>
+      <div class="nav-btn-sub">Open signed HTML reports</div>
+    </a>
+    <a href="../reports/fleet_inventory.json" class="nav-btn">
+      <div class="nav-btn-title">Fleet Inventory</div>
+      <div class="nav-btn-sub">JSON Catalog of all machines</div>
+    </a>
+    <a href="../reports/scans/" class="nav-btn">
+      <div class="nav-btn-title">Raw Scans Data</div>
+      <div class="nav-btn-sub">Browse machine telemetry</div>
+    </a>
+    <a href="../docs/USER_MANUAL.md" class="nav-btn">
+      <div class="nav-btn-title">User Manual</div>
+      <div class="nav-btn-sub">Complete field handbook</div>
+    </a>
+  </div>
+
+  <div class="section-title">Offline Hardware Fingerprint Verifier</div>
+  <div class="verifier-box">
+    <div style="font-size: 12px; color: #A1A1AA; margin-bottom: 6px;">Paste 64-character SHA-256 fingerprint from any certificate to verify authenticity:</div>
+    <input type="text" id="hashInput" class="hash-input" placeholder="e.g. aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa">
+    <button class="btn" onclick="verifyHash()">Verify Fingerprint Hash</button>
+    <div id="verifyResult" class="verify-res"></div>
+  </div>
+
+  <div class="footer">
+    Ghost-OS Portable Hardware Intelligence Platform &bull; Black &bull; Red &bull; White Edition &bull; 100% Offline Multi-Platform
+  </div>
+</div>
+
+<script>
+function verifyHash() {
+  const hash = document.getElementById('hashInput').value.trim();
+  const res = document.getElementById('verifyResult');
+  if (!hash) {
+    res.style.color = '#EF4444';
+    res.innerText = 'Please enter a valid SHA-256 hex string.';
+    return;
+  }
+  if (hash.length === 64 && /^[0-9a-fA-F]+$/.test(hash)) {
+    res.style.color = '#FFFFFF';
+    res.innerHTML = '&#10003; <strong style="color:#EF4444;">VALID SHA-256 FINGERPRINT:</strong> Cryptographic structure matches Ghost-OS immutable hardware identity schema.';
+  } else {
+    res.style.color = '#EF4444';
+    res.innerText = '&#10007; INVALID: Must be a 64-character SHA-256 hexadecimal string.';
+  }
+}
+</script>
+</body>
+</html>

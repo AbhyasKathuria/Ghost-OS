@@ -1,0 +1,292 @@
+{
+  "schema_version": "1.0.0",
+  "scan_id": "mob-e8baafe9070a",
+  "machine_fingerprint": "e8baafe9070a98335823d6b4559585f254932af4d5fb3495ab0bb332f267417d",
+  "platform": "Linux",
+  "os_version": "Android 14 (API 34, Patch: 2026-10-01)",
+  "timestamp_utc": "2026-11-20T05:12:40.389115+00:00",
+  "compatibility_matrix": {
+    "cpu": "supported",
+    "ram": "supported",
+    "gpu": "supported",
+    "motherboard": "supported",
+    "network": "supported",
+    "storage_smart": "supported",
+    "battery": "supported",
+    "thermals": "supported",
+    "fans": "supported"
+  },
+  "hardware": {
+    "cpu": {
+      "model": "Qualcomm Snapdragon 8 Gen 3 Octa-Core SoC (3.30 GHz)",
+      "architecture": "arm64",
+      "physical_cores": 8,
+      "logical_threads": 8,
+      "base_clock_mhz": 2600.0,
+      "max_clock_mhz": 2600.0,
+      "temp_c": 34.2
+    },
+    "memory": {
+      "total_bytes": 8589934592,
+      "slots_used": 1,
+      "slots_total": 1,
+      "modules": [
+        {
+          "slot": "POP-RAM-0",
+          "capacity_bytes": 8589934592,
+          "speed_mhz": 4266,
+          "type": "LPDDR4X/5",
+          "manufacturer": "Mobile Integrated DRAM"
+        }
+      ]
+    },
+    "storage": [
+      {
+        "device_id": "internal-ufs0",
+        "model": "High-Speed UFS 2.2 / 3.1 Flash Storage",
+        "serial_hash": "e8baafe9070a9833",
+        "interface": "UFS 2.2 / 3.1",
+        "capacity_bytes": 274877906944,
+        "smart_status": "PASSED",
+        "temp_c": 33.0,
+        "wear_level_pct": 2.1,
+        "power_on_hours": 1680
+      }
+    ],
+    "gpu": [],
+    "motherboard": {
+      "manufacturer": "Samsung Communications Inc.",
+      "product": "Samsung Galaxy S24 Ultra (SM-S928B) Logic Board (Mobile SOC Platform)",
+      "bios_version": "Fastboot-BL-v14.0.8 (ARM TrustZone Active, Knox / Hardware Keystore Enabled)",
+      "bios_date": "2024-04-12",
+      "secure_boot_enabled": true
+    },
+    "battery": {
+      "present": true,
+      "design_capacity_mwh": 19250.0,
+      "full_charge_capacity_mwh": 18672.5,
+      "health_pct": 97.0,
+      "cycle_count": 42,
+      "status": "Discharging (Nominal, Ripple-Free)"
+    },
+    "network": [],
+    "voltages": {
+      "vcore": 0.9,
+      "battery_rail": 4.15,
+      "lpddr_vdd": 1.1,
+      "nand_vcc": 2.95,
+      "pmic_main": 3.3,
+      "display_panel": 4.2,
+      "camera_isp": 1.8
+    },
+    "fan_rpm": {},
+    "gpio_pins": null,
+    "virtualization": null,
+    "connected_mobile_devices": [
+      {
+        "device_type": "Android",
+        "model": "Samsung Galaxy S24 Ultra (SM-S928B)",
+        "os_version": "Android 14 (API 34, Patch: 2026-10-01)",
+        "serial_hash": "e8baafe9070a98335823d6b4559585f254932af4d5fb3495ab0bb332f267417d",
+        "battery_health_pct": 97.0,
+        "battery_cycles": 42,
+        "status": "Authorized",
+        "motherboard_model": "Samsung Galaxy S24 Ultra (SM-S928B) Logic Board (Mobile SOC Platform)",
+        "soc_chipset": "Qualcomm Snapdragon 8 Gen 3 (SM8650-AB)",
+        "firmware_version": "Fastboot-BL-v14.0.8 (ARM TrustZone Active, Knox / Hardware Keystore Enabled)",
+        "storage_capacity_bytes": 274877906944,
+        "storage_wear_pct": 2.1,
+        "ram_bytes": 8589934592,
+        "battery_wear_pct": 3.0,
+        "battery_design_mwh": 19250.0,
+        "battery_full_mwh": 18672.5,
+        "temperatures_c": {
+          "soc": 34.2,
+          "battery": 32.0,
+          "pmic": 34.5,
+          "storage": 33.0
+        },
+        "voltages": {
+          "vcore": 0.9,
+          "battery_rail": 4.15,
+          "lpddr_vdd": 1.1,
+          "nand_vcc": 2.95,
+          "pmic_main": 3.3,
+          "display_panel": 4.2,
+          "camera_isp": 1.8
+        }
+      }
+    ],
+    "industrial_controllers": [],
+    "connected_peripherals": [
+      {
+        "category": "Display / Monitor",
+        "name": "FHD+ Flow AMOLED 120Hz HDR10+ Display Panel",
+        "hardware_id": null,
+        "connection_type": "Internal / MIPI DSI",
+        "manufacturer": "Samsung",
+        "serial_number": null,
+        "status": "Active / Connected",
+        "details": {
+          "resolution": "2400x1080 @ 120Hz",
+          "panel_type": "Flow AMOLED"
+        }
+      },
+      {
+        "category": "Camera / Video",
+        "name": "Sony IMX766 50MP OIS Primary Sensor + 8MP Ultra-Wide + 2MP Macro",
+        "hardware_id": null,
+        "connection_type": "Internal / MIPI CSI",
+        "manufacturer": "Sony / Samsung",
+        "serial_number": null,
+        "status": "Active / Calibrated",
+        "details": {
+          "megapixels": 50.0,
+          "stabilization": "Optical Image Stabilization (OIS)"
+        }
+      },
+      {
+        "category": "Camera / Video",
+        "name": "16MP Front-Facing Selfie Camera",
+        "hardware_id": null,
+        "connection_type": "Internal / MIPI CSI",
+        "manufacturer": "Samsung",
+        "serial_number": null,
+        "status": "Active / Calibrated",
+        "details": {
+          "megapixels": 16.0
+        }
+      },
+      {
+        "category": "Audio / Speaker / Mic",
+        "name": "Dual Stereo Speakers with Dolby Atmos Audio Subsystem",
+        "hardware_id": null,
+        "connection_type": "Internal / I2S",
+        "manufacturer": "Samsung",
+        "serial_number": null,
+        "status": "Active",
+        "details": {
+          "dolby_atmos": true
+        }
+      },
+      {
+        "category": "Keyboard / Input",
+        "name": "X-axis Linear Haptic Vibration Motor",
+        "hardware_id": null,
+        "connection_type": "Internal / I2C",
+        "manufacturer": "Samsung",
+        "serial_number": null,
+        "status": "Active",
+        "details": {
+          "actuator_type": "X-axis Linear Motor"
+        }
+      },
+      {
+        "category": "USB Hub / Controller",
+        "name": "USB Type-C OTG High-Speed Controller",
+        "hardware_id": null,
+        "connection_type": "Wired / USB",
+        "manufacturer": "Samsung",
+        "serial_number": null,
+        "status": "Active / Connected",
+        "details": {
+          "interface": "USB 2.0 / OTG Host"
+        }
+      },
+      {
+        "category": "Security Module",
+        "name": "ARM TrustZone Secure Element & Android Hardware Keystore",
+        "hardware_id": null,
+        "connection_type": "Internal / Hardware Bus",
+        "manufacturer": "ARM / Samsung",
+        "serial_number": null,
+        "status": "Active / Hardware Attested",
+        "details": {
+          "keystore": "TrustZone TEE"
+        }
+      }
+    ],
+    "network_topology": null
+  },
+  "diagnostics": [
+    {
+      "test_name": "Mobile Battery Degradation & Wear Test",
+      "status": "PASS",
+      "metric_value": 97.0,
+      "threshold": 80.0,
+      "evidence": "Battery Health: 97.0%, Wear Level: 3.0%, Cycle Count: 42 cycles. Full Charge: 18,672.5 mWh / Design: 19,250.0 mWh. Cell degradation nominal.",
+      "recommendation": "Li-ion polymer battery cells operating in peak specification range. No service required."
+    },
+    {
+      "test_name": "Motherboard PMIC Voltage Delivery Rails",
+      "status": "PASS",
+      "metric_value": 0.9,
+      "threshold": 0.9,
+      "evidence": "All 7 component voltage rails (vcore: 0.9V, battery: 4.15V, lpddr: 1.1V, nand: 2.95V, pmic: 3.3V, display: 4.2V, camera: 1.8V) verified within \u00b12.5% of nominal PMIC tolerance.",
+      "recommendation": "Motherboard power delivery subsystem stable, ripple-free, and within ATX/PMIC tolerance."
+    },
+    {
+      "test_name": "Internal Flash Storage Wear & SMART",
+      "status": "PASS",
+      "metric_value": 2.1,
+      "threshold": 10.0,
+      "evidence": "High-Speed UFS 2.2 / 3.1 Flash Storage health: 97.9%, wear level: 2.1%, zero uncorrectable blocks. SMART status: PASSED.",
+      "recommendation": "Solid-state NAND flash wear is negligible. Optimal write endurance remaining."
+    },
+    {
+      "test_name": "SoC Silicon Thermal Dissipation",
+      "status": "PASS",
+      "metric_value": 34.2,
+      "threshold": 75.0,
+      "evidence": "SoC temperature: 34.2\u00b0C, Battery: 32.0\u00b0C, PMIC: 34.5\u00b0C, Storage: 33.0\u00b0C. Thermal throttling inactive.",
+      "recommendation": "Passive and vapor-chamber thermal dissipation operating at optimal ambient efficiency."
+    },
+    {
+      "test_name": "Hardware Security Enclave Binding",
+      "status": "PASS",
+      "metric_value": null,
+      "threshold": null,
+      "evidence": "ARM TrustZone Hardware Keystore active. Root of trust intact.",
+      "recommendation": "Cryptographic keys and biometric templates protected by hardware co-processor."
+    }
+  ],
+  "device_spec": {
+    "device_type": "Android",
+    "model": "Samsung Galaxy S24 Ultra (SM-S928B)",
+    "os_version": "Android 14 (API 34, Patch: 2026-10-01)",
+    "serial_hash": "e8baafe9070a98335823d6b4559585f254932af4d5fb3495ab0bb332f267417d",
+    "battery_health_pct": 97.0,
+    "battery_cycles": 42,
+    "status": "Authorized",
+    "motherboard_model": "Samsung Galaxy S24 Ultra (SM-S928B) Logic Board (Mobile SOC Platform)",
+    "soc_chipset": "Qualcomm Snapdragon 8 Gen 3 (SM8650-AB)",
+    "firmware_version": "Fastboot-BL-v14.0.8 (ARM TrustZone Active, Knox / Hardware Keystore Enabled)",
+    "storage_capacity_bytes": 274877906944,
+    "storage_wear_pct": 2.1,
+    "ram_bytes": 8589934592,
+    "battery_wear_pct": 3.0,
+    "battery_design_mwh": 19250.0,
+    "battery_full_mwh": 18672.5,
+    "temperatures_c": {
+      "soc": 34.2,
+      "battery": 32.0,
+      "pmic": 34.5,
+      "storage": 33.0
+    },
+    "voltages": {
+      "vcore": 0.9,
+      "battery_rail": 4.15,
+      "lpddr_vdd": 1.1,
+      "nand_vcc": 2.95,
+      "pmic_main": 3.3,
+      "display_panel": 4.2,
+      "camera_isp": 1.8
+    }
+  },
+  "audit_metadata": {
+    "audited_at": "2026-11-20T05:12:40.389115+00:00",
+    "auditor": "Ghost-OS Mobile Bridge v1.0",
+    "health_score": 97,
+    "overall_grade": "GRADE A - EXCELLENT"
+  }
+}

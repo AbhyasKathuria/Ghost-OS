@@ -1,0 +1,16 @@
+{
+  "device_spec": {
+    "device_type": "Android",
+    "model": "Google Pixel 8 Pro",
+    "os_version": "Android 15 (API 34, Patch: 2026-10-01)",
+    "serial_hash": "e8baafe9070a98335823d6b4559585f254932af4d5fb3495ab0bb332f267417d",
+    "battery_health_pct": 97.0,
+    "battery_cycles": 18,
+    "status": "Authorized"
+  },
+  "audit_metadata": {
+    "audited_at": "2026-11-15T13:22:21.188586+00:00",
+    "auditor": "Ghost-OS Mobile Bridge v1.0",
+    "health_score": 97
+  }
+}

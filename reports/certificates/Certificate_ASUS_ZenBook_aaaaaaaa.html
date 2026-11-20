@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ghost-OS Hardware Intelligence Report</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #000000;
+            color: #FFFFFF;
+            margin: 0;
+            padding: 30px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #DC2626;
+            padding-bottom: 20px;
+        }
+        .card {
+            background: #0A0A0C;
+            border: 1px solid #27272A;
+            border-radius: 12px;
+            padding: 24px;
+            margin-top: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.8);
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            margin-top: 16px;
+        }
+        .score-box {
+            background: #000000;
+            border-radius: 8px;
+            padding: 16px;
+            text-align: center;
+            border: 1px solid #27272A;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 12px;
+            font-size: 14px;
+        }
+        th {
+            text-align: left;
+            background: #000000;
+            padding: 10px 14px;
+            color: #EF4444;
+            border-bottom: 2px solid #DC2626;
+        }
+        td {
+            padding: 12px 14px;
+            border-bottom: 1px solid #18181B;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div style="display: flex; align-items: center; gap: 14px;">
+                <img src="data:image/png;base64,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" style="width: 44px; height: 44px; object-fit: contain; filter: drop-shadow(0 0 8px #EF4444);" alt="Ghost Skull">
+                <div>
+                    <h1 style="margin: 0; font-size: 24px; color: #EF4444; letter-spacing: 1px;">GHOST-OS HARDWARE INTELLIGENCE</h1>
+                <p style="margin: 4px 0 0 0; color: #A1A1AA; font-size: 13px;">Offline Zero-Footprint Diagnostic Report &bull; Black &bull; Red &bull; White Edition</p>
+            </div>
+            </div>
+            <div style="text-align: right;">
+                <div style="font-size: 12px; color: #EF4444; font-weight: 700;">SCAN TIMESTAMP</div>
+                <div style="font-size: 14px; font-weight: 600; color: #FFFFFF;">2026-11-15T19:20:00Z</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <div>
+                    <h2 style="margin: 0; font-size: 20px; color: #FFFFFF;">Health Evaluation Summary</h2>
+                    <p style="margin: 4px 0 0 0; color: #A1A1AA;">Detected 1 hardware attention item(s). Health Score: 94/100.</p>
+                </div>
+                <div style="font-size: 42px; font-weight: 900; color: #FFFFFF;">94<span style="font-size: 18px; color: #EF4444;">/100</span></div>
+            </div>
+            <div class="grid">
+                <div class="score-box"><div style="color: #A1A1AA; font-size: 11px; font-weight: 700;">CPU</div><div style="font-size: 20px; font-weight: 900; color: #FFFFFF;">100%</div></div>
+                <div class="score-box"><div style="color: #A1A1AA; font-size: 11px; font-weight: 700;">RAM</div><div style="font-size: 20px; font-weight: 900; color: #FFFFFF;">100%</div></div>
+                <div class="score-box"><div style="color: #A1A1AA; font-size: 11px; font-weight: 700;">STORAGE</div><div style="font-size: 20px; font-weight: 900; color: #FFFFFF;">80%</div></div>
+                <div class="score-box"><div style="color: #A1A1AA; font-size: 11px; font-weight: 700;">BATTERY</div><div style="font-size: 20px; font-weight: 900; color: #FFFFFF;">100%</div></div>
+                <div class="score-box"><div style="color: #A1A1AA; font-size: 11px; font-weight: 700;">THERMALS</div><div style="font-size: 20px; font-weight: 900; color: #FFFFFF;">100%</div></div>
+            </div>
+        </div>
+
+        
+
+        <div class="card">
+            <h3 style="margin-top: 0; color: #EF4444;">Machine Identity & Specifications</h3>
+            <div class="grid">
+                <div><strong style="color: #A1A1AA;">Fingerprint:</strong><br><span style="font-family: monospace; font-size: 11px; color: #EF4444;">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</span></div>
+                <div><strong style="color: #A1A1AA;">Platform / OS:</strong><br>Windows (Windows 11 Pro 24H2)</div>
+                <div><strong style="color: #A1A1AA;">Motherboard:</strong><br>ASUSTeK COMPUTER INC. ZenBook 14 OLED UX3405MA (BIOS UX3405MA.311)</div>
+                <div><strong style="color: #A1A1AA;">Processor:</strong><br>Intel Core Ultra 9 185H (16C / 22T)</div>
+                <div><strong style="color: #A1A1AA;">Memory:</strong><br>32.0 GB (8/8 slots)</div>
+                <div><strong style="color: #A1A1AA;">Battery Health:</strong><br>None% (None cycles)</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3 style="margin-top: 0;">Diagnostic Health Tests</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Test Item</th>
+                        <th>Status</th>
+                        <th>Evidence</th>
+                        <th>Recommendation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+            <tr style="border-bottom: 1px solid #374151;">
+                <td style="padding: 10px 14px; font-weight: 500;">RAM Capacity</td>
+                <td style="padding: 10px 14px;"><span style="background-color: #10B98122; color: #10B981; border: 1px solid #10B98155; padding: 3px 8px; border-radius: 4px; font-size: 12px; font-weight: 700;">PASS</span></td>
+                <td style="padding: 10px 14px; color: #9CA3AF;">Sufficient memory detected: 32.0 GB across 8 slot(s).</td>
+                <td style="padding: 10px 14px; color: #D1D5DB;">None</td>
+            </tr>
+            
+            <tr style="border-bottom: 1px solid #374151;">
+                <td style="padding: 10px 14px; font-weight: 500;">Storage Inventory</td>
+                <td style="padding: 10px 14px;"><span style="background-color: #F59E0B22; color: #F59E0B; border: 1px solid #F59E0B55; padding: 3px 8px; border-radius: 4px; font-size: 12px; font-weight: 700;">WARN</span></td>
+                <td style="padding: 10px 14px; color: #9CA3AF;">No physical storage drives detected.</td>
+                <td style="padding: 10px 14px; color: #D1D5DB;">Ensure storage controller drivers are loaded.</td>
+            </tr>
+            
+                </tbody>
+            </table>
+        </div>
+
+        <div class="card">
+            <h3 style="margin-top: 0;">Storage Disks & SMART Status</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Drive Model</th>
+                        <th>Interface</th>
+                        <th>Capacity</th>
+                        <th>SMART Status</th>
+                        <th>Wear Level</th>
+                        <th>Temperature</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

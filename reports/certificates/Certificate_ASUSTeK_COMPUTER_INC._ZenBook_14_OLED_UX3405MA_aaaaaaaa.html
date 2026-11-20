@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ghost-OS Hardware Intelligence Report</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #0F172A;
+            color: #F8FAFC;
+            margin: 0;
+            padding: 30px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #334155;
+            padding-bottom: 20px;
+        }
+        .card {
+            background: #1E293B;
+            border: 1px solid #334155;
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            margin-top: 16px;
+        }
+        .score-box {
+            background: #0F172A;
+            border-radius: 6px;
+            padding: 16px;
+            text-align: center;
+            border: 1px solid #334155;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 12px;
+            font-size: 14px;
+        }
+        th {
+            text-align: left;
+            background: #0F172A;
+            padding: 10px 14px;
+            color: #94A3B8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div>
+                <h1 style="margin: 0; font-size: 24px; color: #38BDF8;">GHOST-OS HARDWARE INTELLIGENCE</h1>
+                <p style="margin: 4px 0 0 0; color: #94A3B8; font-size: 13px;">Offline Zero-Footprint Diagnostic Report</p>
+            </div>
+            <div style="text-align: right;">
+                <div style="font-size: 12px; color: #94A3B8;">SCAN TIMESTAMP</div>
+                <div style="font-size: 14px; font-weight: 600;">2026-11-15T19:20:00Z</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <div>
+                    <h2 style="margin: 0; font-size: 20px;">Health Evaluation Summary</h2>
+                    <p style="margin: 4px 0 0 0; color: #94A3B8;">Detected 1 hardware attention item(s). Health Score: 94/100.</p>
+                </div>
+                <div style="font-size: 38px; font-weight: 800; color: #10B981;">100<span style="font-size: 18px; color: #94A3B8;">/100</span></div>
+            </div>
+            <div class="grid">
+                <div class="score-box"><div style="color: #94A3B8; font-size: 12px;">CPU</div><div style="font-size: 20px; font-weight: 700; color: #38BDF8;">100%</div></div>
+                <div class="score-box"><div style="color: #94A3B8; font-size: 12px;">RAM</div><div style="font-size: 20px; font-weight: 700; color: #38BDF8;">100%</div></div>
+                <div class="score-box"><div style="color: #94A3B8; font-size: 12px;">STORAGE</div><div style="font-size: 20px; font-weight: 700; color: #38BDF8;">100%</div></div>
+                <div class="score-box"><div style="color: #94A3B8; font-size: 12px;">BATTERY</div><div style="font-size: 20px; font-weight: 700; color: #38BDF8;">100%</div></div>
+                <div class="score-box"><div style="color: #94A3B8; font-size: 12px;">THERMALS</div><div style="font-size: 20px; font-weight: 700; color: #38BDF8;">100%</div></div>
+            </div>
+        </div>
+
+        
+
+        <div class="card">
+            <h3 style="margin-top: 0;">Machine Identity & Specifications</h3>
+            <div class="grid">
+                <div><strong style="color: #94A3B8;">Fingerprint:</strong><br><span style="font-family: monospace; font-size: 11px;">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</span></div>
+                <div><strong style="color: #94A3B8;">Platform / OS:</strong><br>PlatformEnum.WINDOWS (Windows 11 Pro 24H2)</div>
+                <div><strong style="color: #94A3B8;">Motherboard:</strong><br>ASUSTeK COMPUTER INC. ZenBook 14 OLED UX3405MA (BIOS UX3405MA.311)</div>
+                <div><strong style="color: #94A3B8;">Processor:</strong><br>Intel Core Ultra 9 185H (16C / 22T)</div>
+                <div><strong style="color: #94A3B8;">Memory:</strong><br>32.0 GB (8/8 slots)</div>
+                <div><strong style="color: #94A3B8;">Battery Health:</strong><br>None% (None cycles)</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3 style="margin-top: 0;">Diagnostic Health Tests</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Test Item</th>
+                        <th>Status</th>
+                        <th>Evidence</th>
+                        <th>Recommendation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+            <tr style="border-bottom: 1px solid #374151;">
+                <td style="padding: 10px 14px; font-weight: 500;">RAM Capacity</td>
+                <td style="padding: 10px 14px;"><span style="background-color: #10B98122; color: #10B981; border: 1px solid #10B98155; padding: 3px 8px; border-radius: 4px; font-size: 12px; font-weight: 700;">DiagnosticStatus.PASS</span></td>
+                <td style="padding: 10px 14px; color: #9CA3AF;">Sufficient memory detected: 32.0 GB across 8 slot(s).</td>
+                <td style="padding: 10px 14px; color: #D1D5DB;">None</td>
+            </tr>
+            
+            <tr style="border-bottom: 1px solid #374151;">
+                <td style="padding: 10px 14px; font-weight: 500;">Storage Inventory</td>
+                <td style="padding: 10px 14px;"><span style="background-color: #F59E0B22; color: #F59E0B; border: 1px solid #F59E0B55; padding: 3px 8px; border-radius: 4px; font-size: 12px; font-weight: 700;">DiagnosticStatus.WARN</span></td>
+                <td style="padding: 10px 14px; color: #9CA3AF;">No physical storage drives detected.</td>
+                <td style="padding: 10px 14px; color: #D1D5DB;">Ensure storage controller drivers are loaded.</td>
+            </tr>
+            
+                </tbody>
+            </table>
+        </div>
+
+        <div class="card">
+            <h3 style="margin-top: 0;">Storage Disks & SMART Status</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Drive Model</th>
+                        <th>Interface</th>
+                        <th>Capacity</th>
+                        <th>SMART Status</th>
+                        <th>Wear Level</th>
+                        <th>Temperature</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

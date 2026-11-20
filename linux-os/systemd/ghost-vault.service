@@ -1,0 +1,12 @@
+[Unit]
+Description=Ghost-OS Auto-mount Ghost Vault & Launch Intelligence Engine
+After=local-fs.target systemd-udevd.service
+Wants=local-fs.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/local/bin/ghost-mount-vault.sh
+
+[Install]
+WantedBy=multi-user.target

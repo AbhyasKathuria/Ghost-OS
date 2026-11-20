@@ -1,0 +1,5 @@
+[AutoRun]
+open=Launch-GhostOS.cmd
+shellexecute=START_HERE.html
+action=Launch Ghost-OS Hardware Intelligence
+label=GhostVault

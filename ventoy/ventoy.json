@@ -1,0 +1,13 @@
+{
+    "control": [
+        { "VTOY_DEFAULT_IMAGE": "/ubuntu-24.04.5-desktop-amd64.iso" },
+        { "VTOY_MENU_TIMEOUT": "8" },
+        { "VTOY_DEFAULT_SEARCH_ROOT": "/" },
+        { "VTOY_SECONDARY_BOOT_MODE": "1" }
+    ],
+    "theme": {
+        "file": "/ventoy/theme/theme.txt",
+        "gfxmode": "auto",
+        "display_mode": "GUI"
+    }
+}

@@ -1,0 +1,203 @@
+{
+  "schema_version": "1.0.0",
+  "scan_id": "41ec8feb-1da9-4e13-adc0-2535c0f06891",
+  "machine_fingerprint": "a4f5eb69202c01b850434d518e3487e70c1550f3832bae2faf0388100c7eff17",
+  "platform": "Windows",
+  "os_version": "Microsoft Windows NT 10.0.26300.0",
+  "timestamp_utc": "2026-11-17T07:04:35Z",
+  "compatibility_matrix": {
+    "cpu": "supported",
+    "ram": "supported",
+    "gpu": "supported",
+    "motherboard": "supported",
+    "storage_smart": "supported",
+    "battery": "supported",
+    "thermals": "limited",
+    "fans": "limited"
+  },
+  "hardware": {
+    "cpu": {
+      "model": "Intel(R) Core(TM) Ultra 9 185H",
+      "architecture": "x86_64",
+      "physical_cores": 16,
+      "logical_threads": 22,
+      "base_clock_mhz": 2300.0,
+      "max_clock_mhz": 2500.0,
+      "temp_c": null
+    },
+    "memory": {
+      "total_bytes": 34359738368,
+      "slots_used": 8,
+      "slots_total": 8,
+      "modules": [
+        {
+          "slot": "Controller0-ChannelA",
+          "capacity_bytes": 4294967296,
+          "speed_mhz": 7467,
+          "type": "LPDDR5",
+          "manufacturer": "Micron Technology"
+        },
+        {
+          "slot": "Controller0-ChannelB",
+          "capacity_bytes": 4294967296,
+          "speed_mhz": 7467,
+          "type": "LPDDR5",
+          "manufacturer": "Micron Technology"
+        },
+        {
+          "slot": "Controller0-ChannelC",
+          "capacity_bytes": 4294967296,
+          "speed_mhz": 7467,
+          "type": "LPDDR5",
+          "manufacturer": "Micron Technology"
+        },
+        {
+          "slot": "Controller0-ChannelD",
+          "capacity_bytes": 4294967296,
+          "speed_mhz": 7467,
+          "type": "LPDDR5",
+          "manufacturer": "Micron Technology"
+        },
+        {
+          "slot": "Controller1-ChannelA",
+          "capacity_bytes": 4294967296,
+          "speed_mhz": 7467,
+          "type": "LPDDR5",
+          "manufacturer": "Micron Technology"
+        },
+        {
+          "slot": "Controller1-ChannelB",
+          "capacity_bytes": 4294967296,
+          "speed_mhz": 7467,
+          "type": "LPDDR5",
+          "manufacturer": "Micron Technology"
+        },
+        {
+          "slot": "Controller1-ChannelC",
+          "capacity_bytes": 4294967296,
+          "speed_mhz": 7467,
+          "type": "LPDDR5",
+          "manufacturer": "Micron Technology"
+        },
+        {
+          "slot": "Controller1-ChannelD",
+          "capacity_bytes": 4294967296,
+          "speed_mhz": 7467,
+          "type": "LPDDR5",
+          "manufacturer": "Micron Technology"
+        }
+      ]
+    },
+    "storage": [
+      {
+        "device_id": "\\\\.\\PHYSICALDRIVE0",
+        "model": "NVMe MTFDKBA1T0QFM-1BD1AABGB",
+        "serial_hash": "a081c5d9adbce6f022d825133e62eebb95b1173da69d7ad8b98f5b5b17a9c585",
+        "interface": "SCSI",
+        "capacity_bytes": 1024203640320,
+        "smart_status": "PASSED",
+        "temp_c": 38.0,
+        "wear_level_pct": 2.0,
+        "power_on_hours": 1000
+      }
+    ],
+    "gpu": [
+      {
+        "name": "Intel(R) Arc(TM) Graphics",
+        "vendor": "Intel",
+        "vram_bytes": 2147479552,
+        "driver_version": "32.0.101.8860",
+        "temp_c": null
+      }
+    ],
+    "motherboard": {
+      "manufacturer": "ASUSTeK COMPUTER INC.",
+      "product": "UX3405MA",
+      "bios_version": "UX3405MA.311",
+      "bios_date": "20250606000000.000000+000",
+      "secure_boot_enabled": true
+    },
+    "battery": {
+      "present": true,
+      "design_capacity_mwh": null,
+      "full_charge_capacity_mwh": null,
+      "health_pct": null,
+      "cycle_count": null,
+      "status": "Remaining 13%"
+    },
+    "network": [
+      {
+        "interface": "Bluetooth Device (Personal Area Network)",
+        "mac_hash": "9326273f115a6244ab8046f2ee6e13febfcf3697ccb261811de9afa9b8afb3da",
+        "type": "Ethernet 802.3",
+        "link_speed_mbps": 3,
+        "status": "Disconnected"
+      },
+      {
+        "interface": "Intel(R) Wi-Fi 6E AX211 160MHz",
+        "mac_hash": "a4f945d30e551c8fae3b44750a050f78ad22f9b6877b50f3eee6f1bc6edba686",
+        "type": "Wireless",
+        "link_speed_mbps": 500,
+        "status": "Connected"
+      },
+      {
+        "interface": "VirtualBox Host-Only Ethernet Adapter",
+        "mac_hash": "8ac4d612409c398eb2082657a5657e0814188a86a6b82924a34d6111824b9acb",
+        "type": "Ethernet 802.3",
+        "link_speed_mbps": 1000,
+        "status": "Connected"
+      }
+    ],
+    "voltages": {
+      "vcore": 1.15,
+      "12v": 12.02,
+      "5v": 5.01,
+      "3v3": 3.31
+    },
+    "fan_rpm": {},
+    "gpio_pins": null,
+    "virtualization": {
+      "is_virtual": false,
+      "hypervisor": "Bare-Metal",
+      "detection_method": "DMI / BIOS Signature"
+    },
+    "connected_mobile_devices": [],
+    "industrial_controllers": [],
+    "connected_peripherals": [],
+    "network_topology": null
+  },
+  "diagnostics": [
+    {
+      "test_name": "CPU Prime Stress & Stability",
+      "status": "PASS",
+      "metric_value": 2973874.0,
+      "threshold": 10000.0,
+      "evidence": "Processed 3,48,513 prime calculations in 0.1s with zero instruction faults.",
+      "recommendation": "CPU multi-threaded arithmetic units nominal."
+    },
+    {
+      "test_name": "Network Loopback & Stack Health",
+      "status": "PASS",
+      "metric_value": 0.0,
+      "threshold": 5.0,
+      "evidence": "Local TCP/IP stack responsive. Loopback RTT: 0 ms.",
+      "recommendation": "None"
+    },
+    {
+      "test_name": "RAM Capacity",
+      "status": "PASS",
+      "metric_value": 32.0,
+      "threshold": 4.0,
+      "evidence": "Sufficient memory detected: 32.0 GB across 8 slot(s).",
+      "recommendation": "None"
+    },
+    {
+      "test_name": "SMART Health [NVMe MTFDKBA1T0QFM-1BD1AABGB]",
+      "status": "PASS",
+      "metric_value": null,
+      "threshold": null,
+      "evidence": "Drive NVMe MTFDKBA1T0QFM-1BD1AABGB SMART status is healthy (PASSED).",
+      "recommendation": "None"
+    }
+  ]
+}

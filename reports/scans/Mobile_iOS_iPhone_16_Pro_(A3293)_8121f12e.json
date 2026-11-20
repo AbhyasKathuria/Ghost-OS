@@ -1,0 +1,16 @@
+{
+  "device_spec": {
+    "device_type": "iOS",
+    "model": "iPhone 16 Pro (A3293)",
+    "os_version": "iOS 18.2",
+    "serial_hash": "8121f12e2b145d94b23be783cc5e2fce201bcc0db129137f068c50a8aedba8e7",
+    "battery_health_pct": 98.4,
+    "battery_cycles": 12,
+    "status": "Connected"
+  },
+  "audit_metadata": {
+    "audited_at": "2026-11-15T13:22:21.188586+00:00",
+    "auditor": "Ghost-OS Mobile Bridge v1.0",
+    "health_score": 98
+  }
+}

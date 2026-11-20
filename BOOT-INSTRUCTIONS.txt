@@ -1,0 +1,59 @@
+==================================================================
+        GHOST-OS: UNIVERSAL HARDWARE INTELLIGENCE PLATFORM
+           BOOT & EXECUTION GUIDE FOR LAB PCS & LAPTOPS
+==================================================================
+
+METHOD 1: RUNNING ON A PC THAT IS ALREADY TURNED ON (WINDOWS)
+------------------------------------------------------------------
+1. Plug this SanDisk USB flash drive into any USB 3.0 / Type-C port.
+2. Open "This PC" / File Explorer -> Open USB Drive (D:).
+3. Double-click:
+      START-HERE.cmd
+4. The audit runs automatically in 2 seconds with zero Smart App Control blocks.
+5. All reports are AUTOMATICALLY saved permanently to this USB drive:
+   - reports\scans\*.json
+   - reports\certificates\*.html
+   - reports\fleet_inventory.json
+   - GhostVault\vault.enc
+6. Your hardware diagnostic report opens automatically in the browser.
+
+
+METHOD 2: THE 1-CLICK DIRECT USB REBOOT (RECOMMENDED FOR ASUS ZENBOOK)
+------------------------------------------------------------------
+If your ASUS ZenBook 14 OLED boots too fast for the Esc key to register:
+1. Double-click "Reboot-Into-GhostOS.cmd" on this USB drive.
+2. Press [ 1 ] for Direct USB Boot.
+3. Your laptop will safely reboot directly into the blue Windows Device Menu.
+4. Simply click: "Use a device" -> "UEFI: SanDisk".
+5. It boots straight into Ghost-OS! Zero keys to press!
+
+
+METHOD 3: COLD BOOTING FROM POWER OFF (MANUAL KEY METHOD)
+------------------------------------------------------------------
+To manually boot the Live Linux OS from cold start:
+1. Turn OFF the laptop completely (not just restart).
+2. Insert this USB drive into the PC.
+3. FOR ASUS ZENBOOK 14 / VIVOBOOK:
+   - Press and HOLD DOWN the [ Esc ] key (or [ F2 ] key) FIRST.
+   - While still holding down [ Esc ], press the Power button ONCE.
+   - DO NOT RELEASE [ Esc ] until the ASUS Boot Device Menu appears!
+   (Note: If Fn-Lock is active on your ZenBook, hold [ Fn ] + [ Esc ]).
+
+BOOT MENU KEYS FOR OTHER LAB COMPUTERS:
+   - DELL PCs & Laptops:    Tap [ F12 ] repeatedly
+   - HP PCs & Laptops:      Tap [ F9 ] repeatedly
+   - LENOVO PCs / ThinkPad: Tap [ F12 ] repeatedly
+   - ACER Laptops & PCs:    Tap [ F12 ] repeatedly
+   - MSI Motherboards:      Tap [ F11 ] repeatedly
+   - GIGABYTE / Custom PC:  Tap [ F12 ] repeatedly
+
+4. Select "UEFI: SanDisk USB" from the list.
+5. You will see the custom Ghost-OS Punisher Skull Bootloader:
+   Select: "Try or Install Ubuntu"
+6. In 15 seconds, you are in the full Live OS running in volatile RAM!
+   - Zero traces left on the computer's hard drive / SSD (0.0 KB footprint).
+   - Host BitLocker is completely untouched.
+
+==================================================================
+               GHOST-OS AIR-GAPPED FORENSIC PLATFORM
+==================================================================

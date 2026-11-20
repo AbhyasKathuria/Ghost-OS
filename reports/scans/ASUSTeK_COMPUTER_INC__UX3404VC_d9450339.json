@@ -1,0 +1,397 @@
+﻿{
+    "schema_version":  "1.0.0",
+    "scan_id":  "l2222222-3333-4444-5555-666677778888",
+    "machine_fingerprint":  "d9450339ee92a05da550cb6baee9d0bc6dbe3587ea7b1dced7037b03ec45eae1",
+    "platform":  "Linux",
+    "os_version":  "Ubuntu 24.04 LTS (Ghost-OS Live 6.8.0-minimal)",
+    "timestamp_utc":  "2026-11-13T08:15:00Z",
+    "compatibility_matrix":  {
+                                 "cpu":  "supported",
+                                 "ram":  "supported",
+                                 "gpu":  "supported",
+                                 "motherboard":  "supported",
+                                 "network":  "supported",
+                                 "storage_smart":  "supported",
+                                 "battery":  "supported",
+                                 "thermals":  "supported",
+                                 "fans":  "supported"
+                             },
+    "hardware":  {
+                     "cpu":  {
+                                 "model":  "13th Gen Intel Core i7-13700H",
+                                 "architecture":  "x86_64",
+                                 "physical_cores":  14,
+                                 "logical_threads":  20,
+                                 "base_clock_mhz":  2400.0,
+                                 "max_clock_mhz":  5000.0,
+                                 "temp_c":  46.0
+                             },
+                     "memory":  {
+                                    "total_bytes":  17179869184,
+                                    "slots_used":  2,
+                                    "slots_total":  2,
+                                    "modules":  [
+                                                    {
+                                                        "slot":  "ChannelA-DIMM0",
+                                                        "capacity_bytes":  8589934592,
+                                                        "speed_mhz":  4800,
+                                                        "type":  "DDR5",
+                                                        "manufacturer":  "Micron"
+                                                    },
+                                                    {
+                                                        "slot":  "ChannelB-DIMM0",
+                                                        "capacity_bytes":  8589934592,
+                                                        "speed_mhz":  4800,
+                                                        "type":  "DDR5",
+                                                        "manufacturer":  "Micron"
+                                                    }
+                                                ]
+                                },
+                     "storage":  [
+                                     {
+                                         "device_id":  "\\\\.\\PhysicalDrive0",
+                                         "model":  "SAMSUNG MZVL21T0HCLR-00B00",
+                                         "serial_hash":  "a1b2c3d4e5f60718293a4b5c6d7e8f90123456789abcdef0123456789abcdef0",
+                                         "interface":  "NVMe",
+                                         "capacity_bytes":  1024209543168,
+                                         "smart_status":  "PASSED",
+                                         "temp_c":  38.0,
+                                         "wear_level_pct":  2.0,
+                                         "power_on_hours":  1200
+                                     }
+                                 ],
+                     "gpu":  [
+                                 {
+                                     "name":  "Intel Iris Xe Graphics",
+                                     "vendor":  "Intel",
+                                     "vram_bytes":  1073741824,
+                                     "driver_version":  "31.0.101.4575",
+                                     "temp_c":  42.0
+                                 }
+                             ],
+                     "motherboard":  {
+                                         "manufacturer":  "ASUSTeK COMPUTER INC.",
+                                         "product":  "UX3404VC",
+                                         "bios_version":  "UX3404VC.308",
+                                         "bios_date":  "2024-03-15",
+                                         "secure_boot_enabled":  true
+                                     },
+                     "battery":  {
+                                     "present":  true,
+                                     "design_capacity_mwh":  70000.0,
+                                     "full_charge_capacity_mwh":  65800.0,
+                                     "health_pct":  94.0,
+                                     "cycle_count":  85,
+                                     "status":  "Discharging"
+                                 },
+                     "network":  [
+                                     {
+                                         "interface":  "Wi-Fi 6E",
+                                         "mac_hash":  "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08",
+                                         "type":  "Wireless",
+                                         "link_speed_mbps":  866,
+                                         "status":  "Connected"
+                                     }
+                                 ],
+                     "fan_rpm":  {
+
+                                 },
+                     "gpio_pins":  null,
+                     "virtualization":  null,
+                     "connected_mobile_devices":  [
+
+                                                  ],
+                     "industrial_controllers":  [
+
+                                                ],
+                     "network_topology":  null,
+                     "voltages":  {
+                                      "vcore":  0.9,
+                                      "+12v":  12.04,
+                                      "+5v":  5.02,
+                                      "+3.3v":  3.31,
+                                      "dram_vdd":  1.1,
+                                      "battery_rail":  8.24
+                                  },
+                     "connected_peripherals":  [
+                                                   {
+                                                       "category":  "Audio / Sound Controller",
+                                                       "name":  "Microsoft Streaming Service Proxy",
+                                                       "connection_type":  "Wired Bus / USB",
+                                                       "status":  "Active / Connected"
+                                                   },
+                                                   {
+                                                       "category":  "Audio / Sound Controller",
+                                                       "name":  "Cirrus Logic Awesome Speaker Amps",
+                                                       "connection_type":  "Wired Bus / USB",
+                                                       "status":  "Active / Connected"
+                                                   },
+                                                   {
+                                                       "category":  "Portable / Mobile Device",
+                                                       "name":  "VTOYEFI",
+                                                       "connection_type":  "Wired Bus / USB",
+                                                       "status":  "Active / Connected"
+                                                   },
+                                                   {
+                                                       "category":  "Portable / Mobile Device",
+                                                       "name":  "GhostVault",
+                                                       "connection_type":  "Wired Bus / USB",
+                                                       "status":  "Active / Connected"
+                                                   },
+                                                   {
+                                                       "category":  "USB Hub / Controller",
+                                                       "name":  "USB Mass Storage Device",
+                                                       "connection_type":  "Wired Bus / USB",
+                                                       "status":  "Active / Connected"
+                                                   },
+                                                   {
+                                                       "category":  "Audio / Sound Controller",
+                                                       "name":  "AirPods Max",
+                                                       "connection_type":  "Wired Bus / USB",
+                                                       "status":  "Active / Connected"
+                                                   },
+                                                   {
+                                                       "category":  "USB Hub / Controller",
+                                                       "name":  "USB4(TM) Host Router (Microsoft)",
+                                                       "connection_type":  "Wired Bus / USB",
+                                                       "status":  "Active / Connected"
+                                                   },
+                                                   {
+                                                       "category":  "USB Hub / Controller",
+                                                       "name":  "Intel(R) USB 3.20 eXtensible Host Controller - 1.20 (Microsoft)",
+                                                       "connection_type":  "Wired Bus / USB",
+                                                       "status":  "Active / Connected"
+                                                   },
+                                                   {
+                                                       "category":  "Input / Keyboard",
+                                                       "name":  "PC/AT Enhanced PS/2 Keyboard (101/102-Key)",
+                                                       "connection_type":  "Wired Bus / USB",
+                                                       "status":  "Active / Connected"
+                                                   },
+                                                   {
+                                                       "category":  "Audio / Sound Controller",
+                                                       "name":  "Intel® Smart Sound Technology for USB Audio",
+                                                       "connection_type":  "Wired Bus / USB",
+                                                       "status":  "Active / Connected"
+                                                   },
+                                                   {
+                                                       "category":  "Audio / Sound Controller",
+                                                       "name":  "CREMP0201sBT26",
+                                                       "connection_type":  "Wired Bus / USB",
+                                                       "status":  "Active / Connected"
+                                                   },
+                                                   {
+                                                       "category":  "Audio / Sound Controller",
+                                                       "name":  "JBL Bar Studio",
+                                                       "connection_type":  "Wired Bus / USB",
+                                                       "status":  "Active / Connected"
+                                                   },
+                                                   {
+                                                       "category":  "Input / Pointing Device",
+                                                       "name":  "HID-compliant mouse",
+                                                       "connection_type":  "Wired Bus / USB",
+                                                       "status":  "Active / Connected"
+                                                   },
+                                                   {
+                                                       "category":  "Audio / Sound Controller",
+                                                       "name":  "Intel® Smart Sound Technology for Bluetooth® LE Audio",
+                                                       "connection_type":  "Wired Bus / USB",
+                                                       "status":  "Active / Connected"
+                                                   },
+                                                   {
+                                                       "category":  "Audio / Sound Controller",
+                                                       "name":  "Intel® Smart Sound Technology for Digital Microphones",
+                                                       "connection_type":  "Wired Bus / USB",
+                                                       "status":  "Active / Connected"
+                                                   },
+                                                   {
+                                                       "category":  "Audio / Sound Controller",
+                                                       "name":  "Intel® Smart Sound Technology for Bluetooth® Audio",
+                                                       "connection_type":  "Wired Bus / USB",
+                                                       "status":  "Active / Connected"
+                                                   },
+                                                   {
+                                                       "category":  "USB Hub / Controller",
+                                                       "name":  "Intel(R) USB 3.20 eXtensible Host Controller - 1.20 (Microsoft)",
+                                                       "connection_type":  "Wired Bus / USB",
+                                                       "status":  "Active / Connected"
+                                                   },
+                                                   {
+                                                       "category":  "Camera / Video Capture",
+                                                       "name":  "USB2.0 FHD UVC WebCam",
+                                                       "connection_type":  "Wired Bus / USB",
+                                                       "status":  "Active / Connected"
+                                                   },
+                                                   {
+                                                       "category":  "Input / Keyboard",
+                                                       "name":  "HID Keyboard Device",
+                                                       "connection_type":  "Wired Bus / USB",
+                                                       "status":  "Active / Connected"
+                                                   },
+                                                   {
+                                                       "category":  "USB Hub / Controller",
+                                                       "name":  "USB Root Hub (USB 3.0)",
+                                                       "connection_type":  "Wired Bus / USB",
+                                                       "status":  "Active / Connected"
+                                                   },
+                                                   {
+                                                       "category":  "Display / Monitor",
+                                                       "name":  "Intel(R) Arc(TM) Graphics",
+                                                       "connection_type":  "Wired Bus / USB",
+                                                       "status":  "Active / Connected"
+                                                   },
+                                                   {
+                                                       "category":  "Audio / Sound Controller",
+                                                       "name":  "CMF Buds 2 Plus",
+                                                       "connection_type":  "Wired Bus / USB",
+                                                       "status":  "Active / Connected"
+                                                   },
+                                                   {
+                                                       "category":  "Audio / Speaker / Headset",
+                                                       "name":  "FxSound Speakers (FxSound Audio Enhancer)",
+                                                       "connection_type":  "Wired Bus / USB",
+                                                       "status":  "Active / Connected"
+                                                   },
+                                                   {
+                                                       "category":  "USB Hub / Controller",
+                                                       "name":  "USB Root Hub (USB 3.0)",
+                                                       "connection_type":  "Wired Bus / USB",
+                                                       "status":  "Active / Connected"
+                                                   },
+                                                   {
+                                                       "category":  "Input / Keyboard",
+                                                       "name":  "HID Keyboard Device",
+                                                       "connection_type":  "Wired Bus / USB",
+                                                       "status":  "Active / Connected"
+                                                   },
+                                                   {
+                                                       "category":  "USB Hub / Controller",
+                                                       "name":  "USB Composite Device",
+                                                       "connection_type":  "Wired Bus / USB",
+                                                       "status":  "Active / Connected"
+                                                   },
+                                                   {
+                                                       "category":  "Audio / Speaker / Headset",
+                                                       "name":  "Microphone Array (Intel® Smart Sound Technology for Digital Microphones)",
+                                                       "connection_type":  "Wired Bus / USB",
+                                                       "status":  "Active / Connected"
+                                                   },
+                                                   {
+                                                       "category":  "Audio / Speaker / Headset",
+                                                       "name":  "Speakers (Realtek(R) Audio)",
+                                                       "connection_type":  "Wired Bus / USB",
+                                                       "status":  "Active / Connected"
+                                                   },
+                                                   {
+                                                       "category":  "Input / Keyboard",
+                                                       "name":  "ASUS Keyboard",
+                                                       "connection_type":  "Wired Bus / USB",
+                                                       "status":  "Active / Connected"
+                                                   },
+                                                   {
+                                                       "category":  "Camera / Video Capture",
+                                                       "name":  "USB2.0 IR UVC WebCam",
+                                                       "connection_type":  "Wired Bus / USB",
+                                                       "status":  "Active / Connected"
+                                                   },
+                                                   {
+                                                       "category":  "Input / Pointing Device",
+                                                       "name":  "HID-compliant mouse",
+                                                       "connection_type":  "Wired Bus / USB",
+                                                       "status":  "Active / Connected"
+                                                   },
+                                                   {
+                                                       "category":  "Audio / Sound Controller",
+                                                       "name":  "JBL TUNE BEAM",
+                                                       "connection_type":  "Wired Bus / USB",
+                                                       "status":  "Active / Connected"
+                                                   },
+                                                   {
+                                                       "category":  "Audio / Sound Controller",
+                                                       "name":  "Realtek(R) Audio",
+                                                       "connection_type":  "Wired Bus / USB",
+                                                       "status":  "Active / Connected"
+                                                   },
+                                                   {
+                                                       "category":  "Audio / Sound Controller",
+                                                       "name":  "Nothing Phone (2a) A2DP SNK",
+                                                       "connection_type":  "Wired Bus / USB",
+                                                       "status":  "Active / Connected"
+                                                   },
+                                                   {
+                                                       "category":  "USB Hub / Controller",
+                                                       "name":  "USB4 Root Router (1.0)",
+                                                       "connection_type":  "Wired Bus / USB",
+                                                       "status":  "Active / Connected"
+                                                   },
+                                                   {
+                                                       "category":  "Audio / Sound Controller",
+                                                       "name":  "CMF Buds",
+                                                       "connection_type":  "Wired Bus / USB",
+                                                       "status":  "Active / Connected"
+                                                   },
+                                                   {
+                                                       "category":  "Audio / Sound Controller",
+                                                       "name":  "EPSON Projector ENP Audio Device",
+                                                       "connection_type":  "Wired Bus / USB",
+                                                       "status":  "Active / Connected"
+                                                   },
+                                                   {
+                                                       "category":  "Audio / Sound Controller",
+                                                       "name":  "FxSound Audio Enhancer",
+                                                       "connection_type":  "Wired Bus / USB",
+                                                       "status":  "Active / Connected"
+                                                   }
+                                               ]
+                 },
+    "diagnostics":  [
+                        {
+                            "test_name":  "CPU Core Temperature",
+                            "status":  "PASS",
+                            "metric_value":  46.0,
+                            "threshold":  75.0,
+                            "evidence":  "CPU temperature nominal at 46.0°C.",
+                            "recommendation":  "None"
+                        },
+                        {
+                            "test_name":  "RAM Capacity",
+                            "status":  "PASS",
+                            "metric_value":  16.0,
+                            "threshold":  4.0,
+                            "evidence":  "Sufficient memory detected: 16.0 GB across 2 slot(s).",
+                            "recommendation":  "None"
+                        },
+                        {
+                            "test_name":  "SMART Health [SAMSUNG MZVL21T0HCLR-00B00]",
+                            "status":  "PASS",
+                            "metric_value":  null,
+                            "threshold":  null,
+                            "evidence":  "Drive SAMSUNG MZVL21T0HCLR-00B00 SMART status is healthy (PASSED).",
+                            "recommendation":  "None"
+                        },
+                        {
+                            "test_name":  "Battery Capacity Health",
+                            "status":  "PASS",
+                            "metric_value":  94.0,
+                            "threshold":  80.0,
+                            "evidence":  "Battery health is good (94.0% remaining capacity).",
+                            "recommendation":  "None"
+                        },
+                        {
+                            "test_name":  "System Voltage Rails Tolerance",
+                            "status":  "PASS",
+                            "metric_value":  0,
+                            "threshold":  0,
+                            "evidence":  "All monitored voltage rails within ±5% ATX specification: vcore=0.9V, +12v=12.04V, +5v=5.02V, +3.3v=3.31V, dram=1.10V, battery=8.24V.",
+                            "recommendation":  "Power supply rails and motherboard power distribution nominal."
+                        },
+                        {
+                            "test_name":  "Wired Optical \u0026 Camera Peripherals",
+                            "status":  "PASS",
+                            "metric_value":  2,
+                            "threshold":  1,
+                            "evidence":  "Detected 2 active wired optical device(s): USB2.0 FHD UVC WebCam, USB2.0 IR UVC WebCam.",
+                            "recommendation":  "Hardware optical sensors verified and operational."
+                        }
+                    ]
+}

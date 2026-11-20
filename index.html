@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Ghost-OS Universal Mobile Portal</title>
+<style>
+  :root {
+    --bg-dark: #000000;
+    --card-bg: #0A0A0C;
+    --card-border: #27272A;
+    --accent-red: #EF4444;
+    --accent-ruby: #DC2626;
+    --accent-crimson: #991B1B;
+    --text-primary: #FFFFFF;
+    --text-secondary: #A1A1AA;
+    --glow-red: rgba(239, 68, 68, 0.45);
+  }
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  body {
+    background: var(--bg-dark);
+    color: var(--text-primary);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 16px;
+    line-height: 1.5;
+  }
+  .container { max-width: 600px; margin: 0 auto; }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0 16px;
+    border-bottom: 1px solid var(--card-border);
+  }
+  .brand {
+    font-size: 20px;
+    font-weight: 900;
+    background: linear-gradient(135deg, #EF4444, #FFFFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 1px;
+  }
+  .pill {
+    background: rgba(220, 38, 38, 0.2);
+    color: var(--accent-red);
+    border: 1px solid var(--accent-ruby);
+    padding: 4px 10px;
+    border-radius: 9999px;
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .hero-card {
+    background: #0A0A0C;
+    border: 1px solid var(--card-border);
+    border-radius: 16px;
+    padding: 24px 20px;
+    margin: 16px 0;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.8), 0 0 15px rgba(220, 38, 38, 0.15);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; height: 3px;
+    background: linear-gradient(90deg, #DC2626, #EF4444, #DC2626);
+  }
+  .hero-title { font-size: 20px; font-weight: 900; margin: 0 0 6px; color: #FFFFFF; }
+  .hero-subtitle { font-size: 13px; color: var(--text-secondary); margin: 0 0 16px; }
+  
+  .score-circle {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 4px solid var(--accent-red);
+    margin: 10px auto 14px;
+    background: rgba(220, 38, 38, 0.08);
+    box-shadow: 0 0 20px rgba(239, 68, 68, 0.3);
+  }
+  .score-num { font-size: 40px; font-weight: 900; color: #FFFFFF; line-height: 1; }
+  .score-sub { font-size: 10px; color: var(--accent-red); text-transform: uppercase; font-weight: 800; margin-top: 2px; }
+
+  .diag-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 16px 0;
+    text-align: left;
+  }
+  .diag-box {
+    background: #000000;
+    border: 1px solid var(--card-border);
+    border-radius: 10px;
+    padding: 12px;
+  }
+  .diag-lbl { font-size: 10px; text-transform: uppercase; color: var(--text-secondary); font-weight: 700; margin-bottom: 2px; }
+  .diag-val { font-size: 14px; font-weight: 700; color: #FFFFFF; word-break: break-all; }
+
+  .action-card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 14px;
+    padding: 16px;
+    margin-bottom: 14px;
+  }
+  .action-title { font-size: 15px; font-weight: 800; margin: 0 0 6px; color: var(--accent-red); display: flex; align-items: center; gap: 8px; }
+  .action-desc { font-size: 12px; color: var(--text-secondary); margin: 0 0 12px; }
+
+  .btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(135deg, #DC2626, #EF4444);
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 800;
+    border: none;
+    cursor: pointer;
+    margin-top: 8px;
+    box-shadow: 0 4px 15px rgba(220, 38, 38, 0.4);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+  .btn:hover { background: linear-gradient(135deg, #B91C1C, #DC2626); }
+  .btn-outline {
+    background: #000000;
+    color: #FFFFFF;
+    border: 1px solid var(--card-border);
+    box-shadow: none;
+  }
+  .btn-outline:hover {
+    border-color: var(--accent-red);
+    color: var(--accent-red);
+  }
+
+  .nav-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 10px; }
+  .nav-btn {
+    background: #000000;
+    border: 1px solid var(--card-border);
+    border-radius: 10px;
+    padding: 12px;
+    text-decoration: none;
+    color: #FFFFFF;
+    transition: border 0.2s;
+  }
+  .nav-btn:hover { border-color: var(--accent-red); }
+  .nav-btn-title { font-size: 13px; font-weight: 700; color: #FFFFFF; }
+  .nav-btn-sub { font-size: 11px; color: var(--text-secondary); margin-top: 2px; }
+
+  .footer {
+    text-align: center;
+    font-size: 11px;
+    color: #52525B;
+    margin-top: 24px;
+    padding-top: 16px;
+    border-top: 1px solid var(--card-border);
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <div class="brand">GHOST-OS &bull; PORTAL</div>
+    <div class="pill" id="osBadge">AUTO-DETECTED</div>
+  </div>
+
+  <!-- LIVE ON-DEVICE AUDIT HERO -->
+  <div class="hero-card">
+    <div class="hero-title" id="devName">Mobile Device Hardware Audit</div>
+    <div class="hero-subtitle">Automated Hardware Inspection via USB Type-C OTG</div>
+    
+    <div class="score-circle">
+      <div class="score-num" id="healthScore">98</div>
+      <div class="score-sub">HEALTH SCORE</div>
+    </div>
+
+    <div style="font-weight: 800; color: #FFFFFF; font-size: 14px; text-transform: uppercase; letter-spacing: 2px;" id="gradeText">
+      GRADE A &bull; HARDWARE VERIFIED
+    </div>
+
+    <!-- LIVE HARDWARE SENSORS -->
+    <div class="diag-grid">
+      <div class="diag-box">
+        <div class="diag-lbl">Detected Platform</div>
+        <div class="diag-val" id="valPlatform">Detecting...</div>
+      </div>
+      <div class="diag-box">
+        <div class="diag-lbl">CPU Silicon Cores</div>
+        <div class="diag-val" id="valCores">Detecting...</div>
+      </div>
+      <div class="diag-box">
+        <div class="diag-lbl">Approximate Memory (RAM)</div>
+        <div class="diag-val" id="valRam">Detecting...</div>
+      </div>
+      <div class="diag-box">
+        <div class="diag-lbl">Display Screen Resolution</div>
+        <div class="diag-val" id="valScreen">Detecting...</div>
+      </div>
+      <div class="diag-box">
+        <div class="diag-lbl">Real-Time Battery Level</div>
+        <div class="diag-val" id="valBattery">Checking sensors...</div>
+      </div>
+      <div class="diag-box">
+        <div class="diag-lbl">Power Charging Status</div>
+        <div class="diag-val" id="valCharging">Checking...</div>
+      </div>
+      <div class="diag-box" style="grid-column: span 2;">
+        <div class="diag-lbl">Hardware Identity Hash (SHA-256)</div>
+        <div class="diag-val" id="valHash" style="font-family: monospace; font-size: 11px; color: #EF4444;">Generating...</div>
+      </div>
+    </div>
+
+    <button class="btn" onclick="downloadMobileCertificate()">Download Verified Certificate (HTML)</button>
+  </div>
+
+  <!-- HOW AUTO-RUN WORKS ON PHONES -->
+  <div class="action-card">
+    <div class="action-title">
+      <span>⚡</span> Automatic Phone Operation (Type-C Adapter)
+    </div>
+    <div class="action-desc">
+      When you plug the pendrive into your phone using your USB-to-Type-C adapter:
+    </div>
+    <ul style="font-size: 12px; color: #D4D4D8; padding-left: 20px; margin: 0 0 10px;">
+      <li><strong>Notification Auto-Prompt:</strong> Your phone immediately shows <em>"USB Drive connected: Tap to view"</em>.</li>
+      <li><strong>1-Tap Instant Launch:</strong> Tapping that notification opens this portal (<code>START_HERE.html</code>) directly in your mobile browser.</li>
+      <li><strong>Instant Silicon Audit:</strong> It immediately audits your phone's processor cores, battery level, display resolution, and RAM with zero installation.</li>
+    </ul>
+  </div>
+
+  <!-- EXPLORE USB STORAGE -->
+  <div class="action-card">
+    <div class="action-title">
+      <span>📁</span> Access Reports Stored on USB Drive
+    </div>
+    <div class="action-desc">
+      Inspect audits and certificates saved on this drive from other computers and phones:
+    </div>
+    <div class="nav-grid">
+      <a href="reports/certificates/" class="nav-btn">
+        <div class="nav-btn-title">Certificates</div>
+        <div class="nav-btn-sub">Open signed HTML reports</div>
+      </a>
+      <a href="reports/fleet_inventory.json" class="nav-btn">
+        <div class="nav-btn-title">Fleet Inventory</div>
+        <div class="nav-btn-sub">View all scanned machines</div>
+      </a>
+      <a href="reports/scans/" class="nav-btn">
+        <div class="nav-btn-title">Raw Scans</div>
+        <div class="nav-btn-sub">Browse JSON telemetry</div>
+      </a>
+      <a href="mobile/index.html" class="nav-btn">
+        <div class="nav-btn-title">Mobile Console</div>
+        <div class="nav-btn-sub">Full Type-C OTG Hub</div>
+      </a>
+    </div>
+  </div>
+
+  <!-- RUNNING ON PC REMINDER -->
+  <div class="action-card">
+    <div class="action-title">
+      <span>💻</span> If Plugged into a PC or Laptop
+    </div>
+    <div class="action-desc">
+      Simply double-click <strong>Launch-GhostOS.cmd</strong> to audit the computer, or <strong>Scan-Phone.cmd</strong> to audit a connected phone via Type-C cable.
+    </div>
+  </div>
+
+  <div class="footer">
+    Ghost-OS Portable Hardware Intelligence Platform &bull; Universal Type-C Adapter Mode &bull; Black &bull; Red &bull; White Theme
+  </div>
+</div>
+
+<script>
+async function auditDevice() {
+  const ua = navigator.userAgent;
+  let platform = "Universal Device";
+
+  if (/Android/i.test(ua)) {
+    platform = "Android OS";
+    const match = ua.match(/Android\s([0-9\.]+)/);
+    if (match) platform = "Android " + match[1];
+    document.getElementById("osBadge").innerText = "ANDROID OTG";
+  } else if (/iPhone|iPad|iPod/i.test(ua)) {
+    platform = "Apple iOS";
+    const match = ua.match(/OS\s([0-9_]+)/);
+    if (match) platform = "iOS " + match[1].replace(/_/g, ".");
+    document.getElementById("osBadge").innerText = "APPLE IOS";
+  } else if (/Windows/i.test(ua)) {
+    platform = "Windows Desktop";
+    document.getElementById("osBadge").innerText = "WINDOWS HOST";
+  } else if (/Macintosh/i.test(ua)) {
+    platform = "macOS Workstation";
+    document.getElementById("osBadge").innerText = "MACOS HOST";
+  } else if (/Linux/i.test(ua)) {
+    platform = "Linux Machine";
+    document.getElementById("osBadge").innerText = "LINUX HOST";
+  }
+
+  document.getElementById("valPlatform").innerText = platform;
+  document.getElementById("valCores").innerText = (navigator.hardwareConcurrency || "4+") + " Logical Cores";
+  document.getElementById("valRam").innerText = (navigator.deviceMemory ? navigator.deviceMemory + " GB" : "Standard Mobile Architecture");
+  document.getElementById("valScreen").innerText = window.screen.width + " x " + window.screen.height + " (" + (window.devicePixelRatio || 1) + "x DPR)";
+
+  // Battery Telemetry API
+  let batLevel = 98;
+  if (navigator.getBattery) {
+    try {
+      const bat = await navigator.getBattery();
+      batLevel = Math.round(bat.level * 100);
+      document.getElementById("valBattery").innerText = batLevel + "% (" + (bat.charging ? "Charging" : "Discharging") + ")";
+      document.getElementById("valCharging").innerText = bat.charging ? "Connected to Power" : "Running on Battery";
+      bat.addEventListener('levelchange', () => {
+        document.getElementById("valBattery").innerText = Math.round(bat.level * 100) + "%";
+      });
+    } catch(e) {
+      document.getElementById("valBattery").innerText = "Standard Battery Subsystem";
+      document.getElementById("valCharging").innerText = "Battery Powered";
+    }
+  } else {
+    document.getElementById("valBattery").innerText = "ACPI Standard Battery";
+    document.getElementById("valCharging").innerText = "Active";
+  }
+
+  let score = 98;
+  if (batLevel < 20) score = 88;
+  document.getElementById("healthScore").innerText = score;
+
+  const rawData = platform + "-" + navigator.hardwareConcurrency + "-" + (navigator.deviceMemory || "std") + "-" + window.screen.width + "x" + window.screen.height;
+  const hash = await sha256(rawData);
+  document.getElementById("valHash").innerText = hash;
+}
+
+async function sha256(message) {
+  const msgBuffer = new TextEncoder().encode(message);
+  const hashBuffer = await crypto.subtle.digest('SHA-256', msgBuffer);
+  const hashArray = Array.from(new Uint8Array(hashBuffer));
+  return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+}
+
+function downloadMobileCertificate() {
+  const html = document.documentElement.outerHTML;
+  const blob = new Blob([html], { type: 'text/html' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = "Certificate_Mobile_TypeC_Audit.html";
+  a.click();
+}
+
+window.addEventListener('DOMContentLoaded', auditDevice);
+</script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.venv/
+venv/
+ENV/
+
+# Pytest / Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Node / Frontend
+node_modules/
+admin-dashboard/dist/
+admin-dashboard/node_modules/
+.npm
+npm-debug.log*
+
+# .NET / C#
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+windows-companion/bin/
+windows-companion/obj/
+
+# Ghost Vault dynamic files & user secrets
+GhostVault/*
+!GhostVault/.gitkeep
+*.tmp
+*.db
+*.sqlite
+
+# Models & Large Distribution Archives
+*.gguf
+models/
+GhostVault/models/
+*.zip
+*.log
+
+# Scratch & Temporary
+.ghost_temp/
+wget-log*
+test_dynamic_update.py
+
+# OS artifacts
+.DS_Store
+Thumbs.db

@@ -1,0 +1,293 @@
+{
+  "schema_version": "1.0.0",
+  "scan_id": "mob-8121f12e2b14",
+  "machine_fingerprint": "8121f12e2b145d94b23be783cc5e2fce201bcc0db129137f068c50a8aedba8e7",
+  "platform": "macOS",
+  "os_version": "iOS 18.1.1",
+  "timestamp_utc": "2026-11-20T05:12:40.389115+00:00",
+  "compatibility_matrix": {
+    "cpu": "supported",
+    "ram": "supported",
+    "gpu": "supported",
+    "motherboard": "supported",
+    "network": "supported",
+    "storage_smart": "supported",
+    "battery": "supported",
+    "thermals": "supported",
+    "fans": "supported"
+  },
+  "hardware": {
+    "cpu": {
+      "model": "Apple A17 Pro Bionic Silicon (6-Core, 3.78 GHz)",
+      "architecture": "arm64",
+      "physical_cores": 6,
+      "logical_threads": 6,
+      "base_clock_mhz": 3460.0,
+      "max_clock_mhz": 3460.0,
+      "temp_c": 33.5
+    },
+    "memory": {
+      "total_bytes": 8589934592,
+      "slots_used": 1,
+      "slots_total": 1,
+      "modules": [
+        {
+          "slot": "POP-RAM-0",
+          "capacity_bytes": 8589934592,
+          "speed_mhz": 6400,
+          "type": "LPDDR5X",
+          "manufacturer": "Apple Unified DRAM"
+        }
+      ]
+    },
+    "storage": [
+      {
+        "device_id": "apple-nvme0",
+        "model": "Apple NVMe PCIe Gen 4 Solid State Storage (APFS Encrypted)",
+        "serial_hash": "8121f12e2b145d94",
+        "interface": "NVMe / PCIe",
+        "capacity_bytes": 274877906944,
+        "smart_status": "PASSED",
+        "temp_c": 32.0,
+        "wear_level_pct": 1.8,
+        "power_on_hours": 1420
+      }
+    ],
+    "gpu": [],
+    "motherboard": {
+      "manufacturer": "Apple Inc.",
+      "product": "Apple iPhone 15 Pro Logic Board (D38 Architecture)",
+      "bios_version": "iBoot-11881.0.12 (Secure Enclave OS Active, Secure Boot Level 1 - Production Signed)",
+      "bios_date": "2024-09-18",
+      "secure_boot_enabled": true
+    },
+    "battery": {
+      "present": true,
+      "design_capacity_mwh": 12890.0,
+      "full_charge_capacity_mwh": 12683.8,
+      "health_pct": 98.4,
+      "cycle_count": 89,
+      "status": "Discharging (Nominal, Ripple-Free)"
+    },
+    "network": [],
+    "voltages": {
+      "vcore": 0.92,
+      "battery_rail": 4.12,
+      "lpddr_vdd": 1.05,
+      "nand_vcc": 2.95,
+      "pmic_main": 3.3,
+      "display_panel": 4.2,
+      "camera_isp": 1.8
+    },
+    "fan_rpm": {},
+    "gpio_pins": null,
+    "virtualization": null,
+    "connected_mobile_devices": [
+      {
+        "device_type": "iOS",
+        "model": "iPhone 15 Pro Max (A3106)",
+        "os_version": "iOS 18.1.1",
+        "serial_hash": "8121f12e2b145d94b23be783cc5e2fce201bcc0db129137f068c50a8aedba8e7",
+        "battery_health_pct": 98.4,
+        "battery_cycles": 89,
+        "status": "Connected",
+        "motherboard_model": "Apple iPhone 15 Pro Logic Board (D38 Architecture)",
+        "soc_chipset": "Apple A17 Pro Bionic (TSMC 3nm N3B)",
+        "firmware_version": "iBoot-11881.0.12 (Secure Enclave OS Active, Secure Boot Level 1 - Production Signed)",
+        "storage_capacity_bytes": 274877906944,
+        "storage_wear_pct": 1.8,
+        "ram_bytes": 8589934592,
+        "battery_wear_pct": 1.6,
+        "battery_design_mwh": 12890.0,
+        "battery_full_mwh": 12683.8,
+        "temperatures_c": {
+          "soc": 33.5,
+          "battery": 31.0,
+          "pmic": 34.0,
+          "storage": 32.0
+        },
+        "voltages": {
+          "vcore": 0.92,
+          "battery_rail": 4.12,
+          "lpddr_vdd": 1.05,
+          "nand_vcc": 2.95,
+          "pmic_main": 3.3,
+          "display_panel": 4.2,
+          "camera_isp": 1.8
+        }
+      }
+    ],
+    "industrial_controllers": [],
+    "connected_peripherals": [
+      {
+        "category": "Display / Monitor",
+        "name": "Apple Super Retina XDR OLED Display (460 ppi, ProMotion 120Hz, HDR10)",
+        "hardware_id": null,
+        "connection_type": "Internal / MIPI DSI",
+        "manufacturer": "Apple Inc.",
+        "serial_number": null,
+        "status": "Active / Connected",
+        "details": {
+          "resolution": "2556x1179 @ 120Hz",
+          "panel_type": "OLED Super Retina XDR"
+        }
+      },
+      {
+        "category": "Camera / Video",
+        "name": "Apple TrueDepth Front Camera Array (12MP, Face ID Sensor, Dot Projector)",
+        "hardware_id": null,
+        "connection_type": "Internal / MIPI CSI",
+        "manufacturer": "Apple Inc.",
+        "serial_number": null,
+        "status": "Active / Calibrated",
+        "details": {
+          "megapixels": 12.0,
+          "biometric_support": "Face ID"
+        }
+      },
+      {
+        "category": "Camera / Video",
+        "name": "Apple Dual/Triple Rear Camera System (48MP Main Sensor, Sensor-Shift OIS)",
+        "hardware_id": null,
+        "connection_type": "Internal / MIPI CSI",
+        "manufacturer": "Apple Inc.",
+        "serial_number": null,
+        "status": "Active / Calibrated",
+        "details": {
+          "primary_sensor_mp": 48.0,
+          "stabilization": "Sensor-Shift OIS"
+        }
+      },
+      {
+        "category": "Audio / Speaker / Mic",
+        "name": "Apple Stereo Speaker Array & Beamforming Microphone Subsystem",
+        "hardware_id": null,
+        "connection_type": "Internal / I2S",
+        "manufacturer": "Apple Inc.",
+        "serial_number": null,
+        "status": "Active",
+        "details": {
+          "spatial_audio": true
+        }
+      },
+      {
+        "category": "Keyboard / Input",
+        "name": "Apple Taptic Engine Precision Haptic Actuator",
+        "hardware_id": null,
+        "connection_type": "Internal / I2C",
+        "manufacturer": "Apple Inc.",
+        "serial_number": null,
+        "status": "Active / Calibrated",
+        "details": {
+          "actuator_type": "Linear Resonant"
+        }
+      },
+      {
+        "category": "USB Hub / Controller",
+        "name": "Apple High-Speed Type-C / Lightning Controller",
+        "hardware_id": null,
+        "connection_type": "Wired / USB",
+        "manufacturer": "Apple Inc.",
+        "serial_number": null,
+        "status": "Active / Connected",
+        "details": {
+          "interface": "USB 3.2 Gen 2 / USB 2.0"
+        }
+      },
+      {
+        "category": "Security Module",
+        "name": "Apple Secure Enclave Processor (SEP Cryptographic Co-Processor)",
+        "hardware_id": null,
+        "connection_type": "Internal / Hardware Bus",
+        "manufacturer": "Apple Inc.",
+        "serial_number": null,
+        "status": "Active / Hardware Attested",
+        "details": {
+          "keystore": "AES-256 Hardware Enclave"
+        }
+      }
+    ],
+    "network_topology": null
+  },
+  "diagnostics": [
+    {
+      "test_name": "Mobile Battery Degradation & Wear Test",
+      "status": "PASS",
+      "metric_value": 98.4,
+      "threshold": 80.0,
+      "evidence": "Battery Health: 98.4%, Wear Level: 1.6%, Cycle Count: 89 cycles. Full Charge: 12,683.8 mWh / Design: 12,890.0 mWh. Cell degradation nominal.",
+      "recommendation": "Li-ion polymer battery cells operating in peak specification range. No service required."
+    },
+    {
+      "test_name": "Motherboard PMIC Voltage Delivery Rails",
+      "status": "PASS",
+      "metric_value": 0.92,
+      "threshold": 0.9,
+      "evidence": "All 7 component voltage rails (vcore: 0.92V, battery: 4.12V, lpddr: 1.05V, nand: 2.95V, pmic: 3.3V, display: 4.2V, camera: 1.8V) verified within \u00b12.5% of nominal PMIC tolerance.",
+      "recommendation": "Motherboard power delivery subsystem stable, ripple-free, and within ATX/PMIC tolerance."
+    },
+    {
+      "test_name": "Internal Flash Storage Wear & SMART",
+      "status": "PASS",
+      "metric_value": 1.8,
+      "threshold": 10.0,
+      "evidence": "Apple NVMe PCIe Gen 4 Solid State Storage (APFS Encrypted) health: 98.2%, wear level: 1.8%, zero uncorrectable blocks. SMART status: PASSED.",
+      "recommendation": "Solid-state NAND flash wear is negligible. Optimal write endurance remaining."
+    },
+    {
+      "test_name": "SoC Silicon Thermal Dissipation",
+      "status": "PASS",
+      "metric_value": 33.5,
+      "threshold": 75.0,
+      "evidence": "SoC temperature: 33.5\u00b0C, Battery: 31.0\u00b0C, PMIC: 34.0\u00b0C, Storage: 32.0\u00b0C. Thermal throttling inactive.",
+      "recommendation": "Passive and vapor-chamber thermal dissipation operating at optimal ambient efficiency."
+    },
+    {
+      "test_name": "Hardware Security Enclave Binding",
+      "status": "PASS",
+      "metric_value": null,
+      "threshold": null,
+      "evidence": "Apple Secure Enclave Processor (SEP Gen 4) active. Root of trust intact.",
+      "recommendation": "Cryptographic keys and biometric templates protected by hardware co-processor."
+    }
+  ],
+  "device_spec": {
+    "device_type": "iOS",
+    "model": "iPhone 15 Pro Max (A3106)",
+    "os_version": "iOS 18.1.1",
+    "serial_hash": "8121f12e2b145d94b23be783cc5e2fce201bcc0db129137f068c50a8aedba8e7",
+    "battery_health_pct": 98.4,
+    "battery_cycles": 89,
+    "status": "Connected",
+    "motherboard_model": "Apple iPhone 15 Pro Logic Board (D38 Architecture)",
+    "soc_chipset": "Apple A17 Pro Bionic (TSMC 3nm N3B)",
+    "firmware_version": "iBoot-11881.0.12 (Secure Enclave OS Active, Secure Boot Level 1 - Production Signed)",
+    "storage_capacity_bytes": 274877906944,
+    "storage_wear_pct": 1.8,
+    "ram_bytes": 8589934592,
+    "battery_wear_pct": 1.6,
+    "battery_design_mwh": 12890.0,
+    "battery_full_mwh": 12683.8,
+    "temperatures_c": {
+      "soc": 33.5,
+      "battery": 31.0,
+      "pmic": 34.0,
+      "storage": 32.0
+    },
+    "voltages": {
+      "vcore": 0.92,
+      "battery_rail": 4.12,
+      "lpddr_vdd": 1.05,
+      "nand_vcc": 2.95,
+      "pmic_main": 3.3,
+      "display_panel": 4.2,
+      "camera_isp": 1.8
+    }
+  },
+  "audit_metadata": {
+    "audited_at": "2026-11-20T05:12:40.389115+00:00",
+    "auditor": "Ghost-OS Mobile Bridge v1.0",
+    "health_score": 98,
+    "overall_grade": "GRADE A - EXCELLENT"
+  }
+}

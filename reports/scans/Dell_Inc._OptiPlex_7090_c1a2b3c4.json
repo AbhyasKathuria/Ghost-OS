@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0.0",
+  "scan_id": "lab-pc-01-1794810713",
+  "machine_fingerprint": "c1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2",
+  "platform": "Windows",
+  "os_version": "Microsoft Windows 11 Enterprise 23H2",
+  "timestamp_utc": "2026-11-16T06:31:53Z",
+  "compatibility_matrix": {
+    "cpu": "supported",
+    "ram": "supported",
+    "storage_smart": "supported"
+  },
+  "hardware": {
+    "cpu": {
+      "model": "Intel(R) Core(TM) i7-12700",
+      "architecture": "x86_64",
+      "physical_cores": 12,
+      "logical_threads": 20
+    },
+    "memory": {
+      "total_bytes": 17179869184,
+      "slots_used": 2,
+      "slots_total": 4,
+      "modules": []
+    },
+    "motherboard": {
+      "manufacturer": "Dell Inc.",
+      "product": "OptiPlex 7090 Tower",
+      "bios_version": "1.14.0"
+    },
+    "storage": [
+      {
+        "device_id": "nvme0",
+        "model": "KIOXIA 512GB NVMe SSD",
+        "serial_hash": "c1a2b3c4d5e6",
+        "interface": "NVMe",
+        "capacity_bytes": 549755813888,
+        "smart_status": "PASSED"
+      }
+    ],
+    "battery": {
+      "present": false
+    }
+  },
+  "audit_metadata": {
+    "health_score": 96
+  }
+}

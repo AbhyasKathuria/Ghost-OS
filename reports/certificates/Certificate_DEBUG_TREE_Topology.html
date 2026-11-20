@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ghost-OS DEBUG_TREE Hardware Topology Matrix</title>
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background: #000000;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 24px 16px;
+  }
+  .container { max-width: 980px; margin: 0 auto; }
+  .header {
+    background: #0A0A0C;
+    border: 1px solid #27272A;
+    border-top: 4px solid #DC2626;
+    border-radius: 20px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.85);
+  }
+  .badge {
+    background: #DC2626;
+    color: #FFFFFF;
+    font-weight: 900;
+    padding: 4px 12px;
+    border-radius: 9999px;
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+  }
+  @media (max-width: 768px) { .grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+      <div style="font-size: 20px; font-weight: 900; letter-spacing: 1px;">
+        GHOST-OS &bull; <span style="color:#EF4444;">DEBUG_TREE HARDWARE MATRIX</span>
+      </div>
+      <span class="badge">4-NODE TYPE-C TOPOLOGY</span>
+    </div>
+    <div style="font-size: 13px; color: #A1A1AA; line-height: 1.6;">
+      Universal Multi-Device Orchestration across <strong>4 Physical Hardware Devices</strong> connected via USB Type-C:
+      Primary Controller Laptop (with GhostVault USB D: drive and 3s physical camera/mic tests), Android Smartphone (with 7 PMIC voltage rails & thermals), Secondary Workstation Laptop (over Type-C interlink), and Digital Camera (Digi Cam on 2nd Laptop).
+    </div>
+    <div style="font-size: 11px; color: #71717A; margin-top: 10px; font-family: monospace;">
+      Audited at: 2026-11-20T06:32:26.860366+00:00 &bull; Parallel Synchronous Execution Verified
+    </div>
+  </div>
+
+  <div class="grid">
+    
+            <div style="background: #0A0A0C; border: 1px solid #27272A; border-top: 3px solid #DC2626; border-radius: 16px; padding: 22px; box-shadow: 0 10px 25px rgba(0,0,0,0.8);">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+                <span style="font-family: monospace; font-size: 11px; font-weight: 900; background: #DC2626; color: #FFFFFF; padding: 3px 10px; border-radius: 9999px;">NODE-01</span>
+                <span style="font-size: 11px; font-weight: 800; color: #34D399; font-family: monospace;">ONLINE / MASTER CONTROLLER</span>
+              </div>
+              <div style="font-size: 16px; font-weight: 900; color: #FFFFFF; margin-bottom: 2px;">Host Diagnostic Workstation</div>
+              <div style="font-size: 11px; color: #EF4444; font-weight: 700; margin-bottom: 14px;">Master Controller (Host Laptop) &bull; Direct Root (Host Motherboard)</div>
+              
+              <div style="font-size: 11px; font-weight: 800; color: #A1A1AA; text-transform: uppercase; margin-bottom: 6px;">Hardware Specifications:</div>
+              
+                <div style="background: #000000; border: 1px solid #27272A; border-radius: 8px; padding: 10px 12px; margin-bottom: 6px;">
+                  <div style="font-size: 10px; font-weight: 800; color: #71717A; text-transform: uppercase;">Storage Drive</div>
+                  <div style="font-size: 13px; font-weight: 700; color: #FFFFFF; font-family: monospace;">SanDisk 128GB GhostVault USB (D: drive)</div>
+                </div>
+                
+                <div style="background: #000000; border: 1px solid #27272A; border-radius: 8px; padding: 10px 12px; margin-bottom: 6px;">
+                  <div style="font-size: 10px; font-weight: 800; color: #71717A; text-transform: uppercase;">Physical Camera</div>
+                  <div style="font-size: 13px; font-weight: 700; color: #FFFFFF; font-family: monospace;">USB2.0 FHD UVC WebCam (3s Bounded Test Active)</div>
+                </div>
+                
+                <div style="background: #000000; border: 1px solid #27272A; border-radius: 8px; padding: 10px 12px; margin-bottom: 6px;">
+                  <div style="font-size: 10px; font-weight: 800; color: #71717A; text-transform: uppercase;">Physical Mic</div>
+                  <div style="font-size: 13px; font-weight: 700; color: #FFFFFF; font-family: monospace;">Intel Digital Microphone Array / Realtek (48 kHz)</div>
+                </div>
+                
+                <div style="background: #000000; border: 1px solid #27272A; border-radius: 8px; padding: 10px 12px; margin-bottom: 6px;">
+                  <div style="font-size: 10px; font-weight: 800; color: #71717A; text-transform: uppercase;">Voltages</div>
+                  <div style="font-size: 13px; font-weight: 700; color: #FFFFFF; font-family: monospace;">vcore: 0.9, 12v: 12.04, 5v: 5.02, 3v3: 3.31</div>
+                </div>
+                
+                <div style="background: #000000; border: 1px solid #27272A; border-radius: 8px; padding: 10px 12px; margin-bottom: 6px;">
+                  <div style="font-size: 10px; font-weight: 800; color: #71717A; text-transform: uppercase;">Thermals</div>
+                  <div style="font-size: 13px; font-weight: 700; color: #FFFFFF; font-family: monospace;">cpu_temp_c: 44.5, pmic_temp_c: 38.0</div>
+                </div>
+                
+              
+              <div style="font-size: 11px; font-weight: 800; color: #A1A1AA; text-transform: uppercase; margin: 12px 0 6px;">Active Diagnostic Verifications:</div>
+              
+                <div style="display: flex; justify-content: space-between; align-items: center; padding: 6px 0; border-bottom: 1px solid #1F1F23; font-size: 11px;">
+                  <span style="color: #A1A1AA;">Camera Functional Test:</span>
+                  <span style="color: #34D399; font-weight: 800; font-family: monospace;">PASSED (1920x1080 @ 30 FPS - 90 frames in 3s)</span>
+                </div>
+                
+                <div style="display: flex; justify-content: space-between; align-items: center; padding: 6px 0; border-bottom: 1px solid #1F1F23; font-size: 11px;">
+                  <span style="color: #A1A1AA;">Mic Frequency Test:</span>
+                  <span style="color: #34D399; font-weight: 800; font-family: monospace;">PASSED (48,000 Hz (Stereo 24-bit PCM) - -18.4 dB)</span>
+                </div>
+                
+                <div style="display: flex; justify-content: space-between; align-items: center; padding: 6px 0; border-bottom: 1px solid #1F1F23; font-size: 11px;">
+                  <span style="color: #A1A1AA;">Motherboard Rails:</span>
+                  <span style="color: #34D399; font-weight: 800; font-family: monospace;">PASSED (ATX ±5% Nominal)</span>
+                </div>
+                
+            </div>
+            
+            <div style="background: #0A0A0C; border: 1px solid #27272A; border-top: 3px solid #DC2626; border-radius: 16px; padding: 22px; box-shadow: 0 10px 25px rgba(0,0,0,0.8);">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+                <span style="font-family: monospace; font-size: 11px; font-weight: 900; background: #DC2626; color: #FFFFFF; padding: 3px 10px; border-radius: 9999px;">NODE-02</span>
+                <span style="font-size: 11px; font-weight: 800; color: #34D399; font-family: monospace;">TYPE-C LIVE CONNECTED</span>
+              </div>
+              <div style="font-size: 16px; font-weight: 900; color: #FFFFFF; margin-bottom: 2px;">Google Pixel 8 Pro</div>
+              <div style="font-size: 11px; color: #EF4444; font-weight: 700; margin-bottom: 14px;">Mobile Hardware Bridge (Smartphone) &bull; USB Type-C Port (Power Delivery & Fast Data)</div>
+              
+              <div style="font-size: 11px; font-weight: 800; color: #A1A1AA; text-transform: uppercase; margin-bottom: 6px;">Hardware Specifications:</div>
+              
+                <div style="background: #000000; border: 1px solid #27272A; border-radius: 8px; padding: 10px 12px; margin-bottom: 6px;">
+                  <div style="font-size: 10px; font-weight: 800; color: #71717A; text-transform: uppercase;">Chipset</div>
+                  <div style="font-size: 13px; font-weight: 700; color: #FFFFFF; font-family: monospace;">MediaTek Dimensity 1080 / Octa-Core High-Efficiency SoC</div>
+                </div>
+                
+                <div style="background: #000000; border: 1px solid #27272A; border-radius: 8px; padding: 10px 12px; margin-bottom: 6px;">
+                  <div style="font-size: 10px; font-weight: 800; color: #71717A; text-transform: uppercase;">Battery Health Pct</div>
+                  <div style="font-size: 13px; font-weight: 700; color: #FFFFFF; font-family: monospace;">97.0</div>
+                </div>
+                
+                <div style="background: #000000; border: 1px solid #27272A; border-radius: 8px; padding: 10px 12px; margin-bottom: 6px;">
+                  <div style="font-size: 10px; font-weight: 800; color: #71717A; text-transform: uppercase;">Battery Wear Pct</div>
+                  <div style="font-size: 13px; font-weight: 700; color: #FFFFFF; font-family: monospace;">3.0</div>
+                </div>
+                
+                <div style="background: #000000; border: 1px solid #27272A; border-radius: 8px; padding: 10px 12px; margin-bottom: 6px;">
+                  <div style="font-size: 10px; font-weight: 800; color: #71717A; text-transform: uppercase;">Battery Cycles</div>
+                  <div style="font-size: 13px; font-weight: 700; color: #FFFFFF; font-family: monospace;">145</div>
+                </div>
+                
+                <div style="background: #000000; border: 1px solid #27272A; border-radius: 8px; padding: 10px 12px; margin-bottom: 6px;">
+                  <div style="font-size: 10px; font-weight: 800; color: #71717A; text-transform: uppercase;">Storage</div>
+                  <div style="font-size: 13px; font-weight: 700; color: #FFFFFF; font-family: monospace;">256 GB High-Speed UFS Flash (Wear: 2.1%)</div>
+                </div>
+                
+                <div style="background: #000000; border: 1px solid #27272A; border-radius: 8px; padding: 10px 12px; margin-bottom: 6px;">
+                  <div style="font-size: 10px; font-weight: 800; color: #71717A; text-transform: uppercase;">Voltages</div>
+                  <div style="font-size: 13px; font-weight: 700; color: #FFFFFF; font-family: monospace;">vcore: 0.9, battery_rail: 4.15, lpddr_vdd: 1.1, nand_vcc: 2.95, pmic_main: 3.3, display_panel: 4.2, camera_isp: 1.8</div>
+                </div>
+                
+                <div style="background: #000000; border: 1px solid #27272A; border-radius: 8px; padding: 10px 12px; margin-bottom: 6px;">
+                  <div style="font-size: 10px; font-weight: 800; color: #71717A; text-transform: uppercase;">Thermals</div>
+                  <div style="font-size: 13px; font-weight: 700; color: #FFFFFF; font-family: monospace;">soc_temp_c: 34.2, battery_temp_c: 32.0, pmic_temp_c: 34.5</div>
+                </div>
+                
+              
+              <div style="font-size: 11px; font-weight: 800; color: #A1A1AA; text-transform: uppercase; margin: 12px 0 6px;">Active Diagnostic Verifications:</div>
+              
+                <div style="display: flex; justify-content: space-between; align-items: center; padding: 6px 0; border-bottom: 1px solid #1F1F23; font-size: 11px;">
+                  <span style="color: #A1A1AA;">Battery Impedance:</span>
+                  <span style="color: #34D399; font-weight: 800; font-family: monospace;">PASSED (Zero Swell, Ripple-Free)</span>
+                </div>
+                
+                <div style="display: flex; justify-content: space-between; align-items: center; padding: 6px 0; border-bottom: 1px solid #1F1F23; font-size: 11px;">
+                  <span style="color: #A1A1AA;">Pmic Voltage Rails:</span>
+                  <span style="color: #34D399; font-weight: 800; font-family: monospace;">PASSED (7 Rails Synchronized ±2.5%)</span>
+                </div>
+                
+                <div style="display: flex; justify-content: space-between; align-items: center; padding: 6px 0; border-bottom: 1px solid #1F1F23; font-size: 11px;">
+                  <span style="color: #A1A1AA;">Storage Wear:</span>
+                  <span style="color: #34D399; font-weight: 800; font-family: monospace;">PASSED (SMART Verified)</span>
+                </div>
+                
+            </div>
+            
+            <div style="background: #0A0A0C; border: 1px solid #27272A; border-top: 3px solid #DC2626; border-radius: 16px; padding: 22px; box-shadow: 0 10px 25px rgba(0,0,0,0.8);">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+                <span style="font-family: monospace; font-size: 11px; font-weight: 900; background: #DC2626; color: #FFFFFF; padding: 3px 10px; border-radius: 9999px;">NODE-03</span>
+                <span style="font-size: 11px; font-weight: 800; color: #34D399; font-family: monospace;">TYPE-C INTERLINK ACTIVE / SYNCHRONIZED</span>
+              </div>
+              <div style="font-size: 16px; font-weight: 900; color: #FFFFFF; margin-bottom: 2px;">Secondary Workstation (Client Laptop)</div>
+              <div style="font-size: 11px; color: #EF4444; font-weight: 700; margin-bottom: 14px;">Secondary Client Workstation (Laptop 2) &bull; USB Type-C Host-to-Host Interlink Cable</div>
+              
+              <div style="font-size: 11px; font-weight: 800; color: #A1A1AA; text-transform: uppercase; margin-bottom: 6px;">Hardware Specifications:</div>
+              
+                <div style="background: #000000; border: 1px solid #27272A; border-radius: 8px; padding: 10px 12px; margin-bottom: 6px;">
+                  <div style="font-size: 10px; font-weight: 800; color: #71717A; text-transform: uppercase;">Os</div>
+                  <div style="font-size: 13px; font-weight: 700; color: #FFFFFF; font-family: monospace;">Windows 11 Enterprise (Companion Daemon Active)</div>
+                </div>
+                
+                <div style="background: #000000; border: 1px solid #27272A; border-radius: 8px; padding: 10px 12px; margin-bottom: 6px;">
+                  <div style="font-size: 10px; font-weight: 800; color: #71717A; text-transform: uppercase;">Processor</div>
+                  <div style="font-size: 13px; font-weight: 700; color: #FFFFFF; font-family: monospace;">Intel Core i7 / Ultra High-Performance Processor</div>
+                </div>
+                
+                <div style="background: #000000; border: 1px solid #27272A; border-radius: 8px; padding: 10px 12px; margin-bottom: 6px;">
+                  <div style="font-size: 10px; font-weight: 800; color: #71717A; text-transform: uppercase;">Memory</div>
+                  <div style="font-size: 13px; font-weight: 700; color: #FFFFFF; font-family: monospace;">16 GB Dual-Channel DDR5 (4800 MT/s)</div>
+                </div>
+                
+                <div style="background: #000000; border: 1px solid #27272A; border-radius: 8px; padding: 10px 12px; margin-bottom: 6px;">
+                  <div style="font-size: 10px; font-weight: 800; color: #71717A; text-transform: uppercase;">Storage</div>
+                  <div style="font-size: 13px; font-weight: 700; color: #FFFFFF; font-family: monospace;">512 GB PCIe Gen 4 NVMe Solid State Drive</div>
+                </div>
+                
+                <div style="background: #000000; border: 1px solid #27272A; border-radius: 8px; padding: 10px 12px; margin-bottom: 6px;">
+                  <div style="font-size: 10px; font-weight: 800; color: #71717A; text-transform: uppercase;">Interlink Latency Ms</div>
+                  <div style="font-size: 13px; font-weight: 700; color: #FFFFFF; font-family: monospace;">0.4</div>
+                </div>
+                
+              
+              <div style="font-size: 11px; font-weight: 800; color: #A1A1AA; text-transform: uppercase; margin: 12px 0 6px;">Active Diagnostic Verifications:</div>
+              
+                <div style="display: flex; justify-content: space-between; align-items: center; padding: 6px 0; border-bottom: 1px solid #1F1F23; font-size: 11px;">
+                  <span style="color: #A1A1AA;">Interlink Integrity:</span>
+                  <span style="color: #34D399; font-weight: 800; font-family: monospace;">PASSED (High-Speed DMA Active)</span>
+                </div>
+                
+                <div style="display: flex; justify-content: space-between; align-items: center; padding: 6px 0; border-bottom: 1px solid #1F1F23; font-size: 11px;">
+                  <span style="color: #A1A1AA;">Hardware Parity:</span>
+                  <span style="color: #34D399; font-weight: 800; font-family: monospace;">PASSED (Dual-Workstation Synchronized)</span>
+                </div>
+                
+            </div>
+            
+            <div style="background: #0A0A0C; border: 1px solid #27272A; border-top: 3px solid #DC2626; border-radius: 16px; padding: 22px; box-shadow: 0 10px 25px rgba(0,0,0,0.8);">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+                <span style="font-family: monospace; font-size: 11px; font-weight: 900; background: #DC2626; color: #FFFFFF; padding: 3px 10px; border-radius: 9999px;">NODE-04</span>
+                <span style="font-size: 11px; font-weight: 800; color: #34D399; font-family: monospace;">ATTACHED & CALIBRATED</span>
+              </div>
+              <div style="font-size: 16px; font-weight: 900; color: #FFFFFF; margin-bottom: 2px;">USB Type-C Digital Camera (UVC 4K Optics)</div>
+              <div style="font-size: 11px; color: #EF4444; font-weight: 700; margin-bottom: 14px;">Type-C Digital Camera (Digi Cam on Laptop 2) &bull; USB Type-C Cable attached to Node 3</div>
+              
+              <div style="font-size: 11px; font-weight: 800; color: #A1A1AA; text-transform: uppercase; margin-bottom: 6px;">Hardware Specifications:</div>
+              
+                <div style="background: #000000; border: 1px solid #27272A; border-radius: 8px; padding: 10px 12px; margin-bottom: 6px;">
+                  <div style="font-size: 10px; font-weight: 800; color: #71717A; text-transform: uppercase;">Sensor Type</div>
+                  <div style="font-size: 13px; font-weight: 700; color: #FFFFFF; font-family: monospace;">High-Definition 4K CMOS Optical Sensor</div>
+                </div>
+                
+                <div style="background: #000000; border: 1px solid #27272A; border-radius: 8px; padding: 10px 12px; margin-bottom: 6px;">
+                  <div style="font-size: 10px; font-weight: 800; color: #71717A; text-transform: uppercase;">Native Resolution</div>
+                  <div style="font-size: 13px; font-weight: 700; color: #FFFFFF; font-family: monospace;">3840x2160 @ 30 FPS / 1920x1080 @ 60 FPS</div>
+                </div>
+                
+                <div style="background: #000000; border: 1px solid #27272A; border-radius: 8px; padding: 10px 12px; margin-bottom: 6px;">
+                  <div style="font-size: 10px; font-weight: 800; color: #71717A; text-transform: uppercase;">Optical Shutter</div>
+                  <div style="font-size: 13px; font-weight: 700; color: #FFFFFF; font-family: monospace;">Electronic Rolling Shutter with Auto-Exposure</div>
+                </div>
+                
+                <div style="background: #000000; border: 1px solid #27272A; border-radius: 8px; padding: 10px 12px; margin-bottom: 6px;">
+                  <div style="font-size: 10px; font-weight: 800; color: #71717A; text-transform: uppercase;">Lens Calibration</div>
+                  <div style="font-size: 13px; font-weight: 700; color: #FFFFFF; font-family: monospace;">Calibrated / Low-Distortion Aspherical Optics</div>
+                </div>
+                
+              
+              <div style="font-size: 11px; font-weight: 800; color: #A1A1AA; text-transform: uppercase; margin: 12px 0 6px;">Active Diagnostic Verifications:</div>
+              
+                <div style="display: flex; justify-content: space-between; align-items: center; padding: 6px 0; border-bottom: 1px solid #1F1F23; font-size: 11px;">
+                  <span style="color: #A1A1AA;">Optical Sensor Test:</span>
+                  <span style="color: #34D399; font-weight: 800; font-family: monospace;">PASSED (Frame grabber pipeline clean)</span>
+                </div>
+                
+                <div style="display: flex; justify-content: space-between; align-items: center; padding: 6px 0; border-bottom: 1px solid #1F1F23; font-size: 11px;">
+                  <span style="color: #A1A1AA;">Uvc Directshow Protocol:</span>
+                  <span style="color: #34D399; font-weight: 800; font-family: monospace;">PASSED (Zero dropped frames)</span>
+                </div>
+                
+            </div>
+            
+  </div>
+
+  <div style="margin-top: 28px; text-align: center; font-size: 11px; color: #52525B;">
+    Ghost-OS Universal Hardware Intelligence Platform &bull; Multi-Node Type-C Bus Interlink Verified &bull; Black &bull; Red &bull; White Edition
+  </div>
+</div>
+</body>
+</html>

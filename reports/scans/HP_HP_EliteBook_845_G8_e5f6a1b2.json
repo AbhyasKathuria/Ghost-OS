@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0.0",
+  "scan_id": "lab-pc-02-1794810847",
+  "machine_fingerprint": "e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6",
+  "platform": "Windows",
+  "os_version": "Microsoft Windows 10 Pro 22H2",
+  "timestamp_utc": "2026-11-16T06:34:07Z",
+  "compatibility_matrix": {
+    "cpu": "supported",
+    "ram": "supported",
+    "storage_smart": "supported"
+  },
+  "hardware": {
+    "cpu": {
+      "model": "AMD Ryzen 7 PRO 5850U",
+      "architecture": "x86_64",
+      "physical_cores": 8,
+      "logical_threads": 16
+    },
+    "memory": {
+      "total_bytes": 17179869184,
+      "slots_used": 2,
+      "slots_total": 2,
+      "modules": []
+    },
+    "motherboard": {
+      "manufacturer": "HP",
+      "product": "HP EliteBook 845 G8",
+      "bios_version": "01.09.01"
+    },
+    "storage": [
+      {
+        "device_id": "nvme0",
+        "model": "Samsung PM991a 512GB",
+        "serial_hash": "e5f6a1b2c3d4",
+        "interface": "NVMe",
+        "capacity_bytes": 549755813888,
+        "smart_status": "PASSED"
+      }
+    ],
+    "battery": {
+      "present": true,
+      "health_pct": 91.5
+    }
+  },
+  "audit_metadata": {
+    "health_score": 98
+  }
+}

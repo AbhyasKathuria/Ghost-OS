@@ -1,0 +1,13 @@
+python312.zip
+.
+
+# Uncomment to run site.main() automatically
+import site
+
+.
+..
+..\..\ghost_core
+..\..\ghost_vault
+..\..\ghost_ai
+Lib
+site-packages

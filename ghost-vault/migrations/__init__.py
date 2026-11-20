@@ -1,0 +1,1 @@
+"""Ghost Vault Database Migrations."""

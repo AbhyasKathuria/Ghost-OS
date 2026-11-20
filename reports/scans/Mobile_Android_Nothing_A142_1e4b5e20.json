@@ -1,0 +1,16 @@
+{
+  "device_spec": {
+    "device_type": "Android",
+    "model": "Nothing A142",
+    "os_version": "Android 16 (API 36, Patch: 2026-10-01)",
+    "serial_hash": "1e4b5e20574c44bfa18232e5c066c42ef858ec3eb4c0337d8a28134a3b780ae6",
+    "battery_health_pct": 87.0,
+    "battery_cycles": null,
+    "status": "Authorized (Live Type-C Interrogated)"
+  },
+  "audit_metadata": {
+    "audited_at": "2026-11-15T14:53:47.781850+00:00",
+    "auditor": "Ghost-OS Mobile Bridge v1.0",
+    "health_score": 87
+  }
+}
